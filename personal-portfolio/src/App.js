@@ -1,38 +1,26 @@
 import React from 'react';
-import { Component } from 'react'
-// import './App.css';
+import logo from './logo.svg';
+import './App.css';
 
-
-import Button from '@material-ui/core/Button';
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import SimpleContainer from './components/SimpleContainer'
-import SimpleBottomNav from './components/BottomNav'
-import OpenIconSpeedDial from './components/SpeedDial'
-import Modal from './components/Modal'
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        {/* nav bar */}
-        <NavBar />
-        {/* landing page / hero */}
-        <Hero />
-        {/* <Modal> */}
-        <OpenIconSpeedDial />
-        {/* </Modal> */}
-        <SimpleContainer />    
-        {/* about me */}
-        {/* interests */}
-        {/* projects */}
-        {/* resume CV */}
-        {/* contact me */}
-        {/* app footer bar thing */}
-        <SimpleBottomNav />
-
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
-export default App
+
+export default App;
