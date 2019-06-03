@@ -5,7 +5,17 @@ import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom'
+
 // import Background from '../images/hero/grey_background.jpg'
+
+const AboutPage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/about" {...props} />
+));
+const ContactPage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/contact" {...props} />
+));
+
 
 const useStyles = makeStyles(theme => ({
   hero: {
@@ -28,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   subtitle: {
     color: 'rgba(255,255,255,0.9)',
   }
-}));
+}));  
 
 function Hero() {
   const classes = useStyles();
@@ -48,12 +58,12 @@ function Hero() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button component={ContactPage} variant="contained" color="primary">
                     Contact Me
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="contained" color="secondary">
+                  <Button component={AboutPage} variant="contained" color="secondary">
                     About Me
                   </Button>
                 </Grid>

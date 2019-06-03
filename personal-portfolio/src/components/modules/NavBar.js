@@ -27,11 +27,11 @@ const LandingPage = React.forwardRef((props, ref) => (
 const AboutPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/about" {...props} />
 ));
-const ResumePage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/resume" {...props} />
-));
 const ContactPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/contact" {...props} />
+));
+const ResumePage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/resume" {...props} />
 ));
 const ProjectsPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/projects" {...props} />

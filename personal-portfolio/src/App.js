@@ -4,7 +4,7 @@ import { Component } from 'react'
 import AppRouter from './components/routers/router';
 
 import Button from '@material-ui/core/Button';
-import NavBar from './components/NavBar'
+import NavBar from './components/modules/NavBar'
 import SimpleContainer from './components/SimpleContainer'
 import SimpleBottomNav from './components/BottomNav'
 import OpenIconSpeedDial from './components/SpeedDial'
