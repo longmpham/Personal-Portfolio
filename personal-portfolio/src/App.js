@@ -4,18 +4,14 @@ import { Component } from 'react'
 import AppRouter from './components/routers/router';
 
 // pages!
-import LandingPage from './components/views/landing'
-import AboutPage from './components/views/about'
-import ContactPage from './components/views/contact'
-import ProjectsPage from './components/views/projects'
-import ResumePage from './components/views/resume'
+// import LandingPage from './components/views/landing'
+// import AboutPage from './components/views/about'
+// import ContactPage from './components/views/contact'
+// import ProjectsPage from './components/views/projects'
+// import ResumePage from './components/views/resume'
 
-import Button from '@material-ui/core/Button';
 import NavBar from './components/modules/NavBar'
-import SimpleContainer from './components/modules/SimpleContainer'
-import SimpleBottomNav from './components/BottomNav'
 import OpenIconSpeedDial from './components/SpeedDial'
-import Modal from './components/Modal'
 
 class App extends Component {
   render() {

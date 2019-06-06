@@ -9,11 +9,17 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import MailIcon from '@material-ui/icons/Mail'
 
+import { Link } from 'react-router-dom'
+
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
   },
 });
+
+const ContactPage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/contact" {...props} />
+));
 
 function ImgMediaCard() {
   const classes = useStyles();
@@ -39,7 +45,7 @@ function ImgMediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button component={ContactPage} size="small" color="primary">
           Contact
           <MailIcon />
         </Button>

@@ -15,6 +15,8 @@ const useStyles = makeStyles({
   },
 });
 
+const GitHubRepo = "https://github.com/longmpham/Personal-Portfolio";
+
 function ImgMediaCard() {
   const classes = useStyles();
 
@@ -38,7 +40,7 @@ function ImgMediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button href={GitHubRepo} size="small" color="primary">
           GitHub Repo
           <LaunchIcon />
         </Button>
