@@ -12,7 +12,7 @@ import ResumePage from './components/views/resume'
 
 import Button from '@material-ui/core/Button';
 import NavBar from './components/modules/NavBar'
-import SimpleContainer from './components/SimpleContainer'
+import SimpleContainer from './components/modules/SimpleContainer'
 import SimpleBottomNav from './components/BottomNav'
 import OpenIconSpeedDial from './components/SpeedDial'
 import Modal from './components/Modal'

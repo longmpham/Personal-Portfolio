@@ -7,7 +7,7 @@ function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '40rem', maxWidth: 'lg'}} />
       </Container>
     </React.Fragment>
