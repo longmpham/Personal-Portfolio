@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
+    textDecoration: 'none',
   },
 }));
 
@@ -48,7 +49,7 @@ function NavBar() {
             <Drawer />
             {/* <MenuIcon /> */}
           {/* </IconButton> */}
-          <Typography variant="h6" className={classes.title}>
+          <Typography component={LandingPage} variant="h6" color="inherit" className={classes.title}>
             {/* <Button className={classes.title} component={LandingPage} color="inherit">Home</Button> */}
             Long Pham
           </Typography>

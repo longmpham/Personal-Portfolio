@@ -42,7 +42,7 @@ function ImgMediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={GitHubRepo} size="small" color="primary">
+        <Button href={GitHubRepo} rel="noopener" size="small" color="primary">
           GitHub Repo (Incomplete)
           <LaunchIcon />
         </Button>

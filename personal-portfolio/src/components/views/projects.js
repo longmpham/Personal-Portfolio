@@ -22,8 +22,6 @@ const ProjectsPage = () => (
         <Grid item xs={12} sm={6} md={4}>
           <KerasGaborCNNCard />
         </Grid>
-      
-      
     </Grid>
 
     
