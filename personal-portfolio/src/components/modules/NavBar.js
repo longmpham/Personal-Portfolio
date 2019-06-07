@@ -9,6 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import Drawer from '../modules/Drawer'
 import { Link } from 'react-router-dom'
+import { Hidden } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -53,10 +54,12 @@ function NavBar() {
             {/* <Button className={classes.title} component={LandingPage} color="inherit">Home</Button> */}
             Long Pham
           </Typography>
-          <Button component={AboutPage} color="inherit">About Me</Button>         
-          <Button component={ContactPage} color="inherit">Contact</Button>
-          <Button component={ProjectsPage} color="inherit">Projects</Button>
-          <Button component={ResumePage} color="inherit">Resume/CV</Button>
+          <Hidden smDown>
+            <Button component={AboutPage} color="inherit">About Me</Button>         
+            <Button component={ProjectsPage} color="inherit">Projects</Button>
+            <Button component={ResumePage} color="inherit">Resume/CV</Button>
+            <Button component={ContactPage} color="inherit">Contact</Button>
+          </Hidden>
         </Toolbar>
       </AppBar>
     </div>

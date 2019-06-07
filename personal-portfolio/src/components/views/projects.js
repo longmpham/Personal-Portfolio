@@ -1,7 +1,7 @@
 import React from 'react';
-import PersonalPortfolioCard from '../modules/ProjectCards/PersonalPortfolioCard';
-import NoYouDecideCard from '../modules/ProjectCards/NoYouDecideCard';
-import KerasGaborCNNCard from '../modules/ProjectCards/KerasGaborCNNCard';
+import PersonalPortfolioCard from '../modules/Cards/PersonalPortfolioCard';
+import NoYouDecideCard from '../modules/Cards/NoYouDecideCard';
+import KerasGaborCNNCard from '../modules/Cards/KerasGaborCNNCard';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid'
 

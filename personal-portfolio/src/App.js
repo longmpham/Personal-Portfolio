@@ -13,6 +13,7 @@ import AppRouter from './components/routers/router';
 import NavBar from './components/modules/NavBar'
 import OpenIconSpeedDial from './components/SpeedDial'
 
+
 class App extends Component {
   render() {
     return (
@@ -22,7 +23,7 @@ class App extends Component {
         <AppRouter />
         {/* landing page / hero */}
         {/* <Modal> */}
-        <OpenIconSpeedDial />
+        {/* <OpenIconSpeedDial /> */}
         {/* </Modal> */}
         {/* about me */}
         {/* <LandingPage />

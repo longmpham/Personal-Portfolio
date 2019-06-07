@@ -1,55 +1,156 @@
 import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Slide from '@material-ui/core/Slide'
+
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider'
+
+import ProfileCard from '../modules/Cards/ProfileCard';
+import InterestChips from '../modules/Chips/InterestChips'
+import GamingChips from '../modules/Chips/GamingChips'
+import ProgrammingChips from '../modules/Chips/ProgrammingChips'
+
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+
+const bigAvatar = {
+  margin: 10,
+  width: 500,
+  height: 100,
+};
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(6, 2),
+    textAlign: "center",
+  },
+}));
+
+function IntroPaperSheet() {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Paper className={classes.root}>
+        <Typography variant="h5" component="h3">
+          Hey! I see you checking me out. That's okay. I'm a pretty cool guy!
+        </Typography>
+      </Paper>
+    </div>
+  );
+}
+
+function PaperSheet() {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Paper className={classes.root}>
+        <Typography variant="h5" component="h3">
+          This is a sheet of paper.
+        </Typography>
+        <Typography component="p">
+          Paper can be used to build surface or other elements for your application.
+        </Typography>
+      </Paper>
+    </div>
+  );
+}
+
+
+function HideOnScroll(props) {
+  const trigger = useScrollTrigger();
+  return (
+    <Slide in={!trigger}>
+      <div>HellCras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.o</div>
+    </Slide>
+  );
+}
+
+function ShowOnScroll(props) {
+  const trigger = useScrollTrigger();
+  return (
+    <Slide in={trigger}>
+      <div>HellCras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.o</div>
+    </Slide>
+  );
+}
 
 
 const AboutPage = () => (
   <div>
-    <h1>ABOUT ME</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, w
-      hen an unknown printer took a galley of type and scrambled it to make a type sp
-      ecimen book. It has survived not only five centuries, but also the leap into electron
-      ic typesetting, remaining essentially unchanged. It was popularised in the 1960s with th
-      e release of Letraset sheets containing Lorem Ipsum passages, and more recently with d
-      esktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lor
-      em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ips
-      um has been the industry's standard dummy text ever since the 1500s, when an unkno
-      wn printer took a galley of type and scrambled it to make a type specimen book.
-       It has survived not only five centuries, but also the leap into electronic typ
-       esetting, remaining essentially unchanged. It was popularised in the 1960s
-        with the release of Letraset sheets containing Lorem Ipsum passages, andmor
-        e recently with desktop publishing software like Aldus PageMaker includi
-        ng versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printin
-        g and typesetting industry. Lorem Ipsum has been the industry's standard 
-        dummy text ever since the 1500s, when an unknown printer took a galley of 
-        type and scrambled it to make a type specimen book. It has survived not
-         only five centuries, but also the leap into electronic typesetting, re
-         maining essentially unchanged. It was popularised in the 1960s with 
-         the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker i
-          ncluding versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of t
-          he printing and typesetting industry. Lorem Ipsum has been the industry's s
-          tandard dummy text ever since the 1500s, when an unknown printer took a gall
-          ey of type and scrambled it to make a type specimen book. It has survived 
-          not only five centuries, but also the leap into electronic typesetting, rem
-          aining essentially unchanged. It was popularised in the 1960s with the rel
-          ease of Letraset sheets containing Lorem Ipsum passages, and more recentl
-          y with desktop publishing software like Aldus PageMaker including version
-          s of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typ
-          esetting industry. Lorem Ipsum has been the industry's standard dummy te
-          xt ever since the 1500s, when an unknown printer took a galley of type a
-          nd scrambled it to make a type specimen book. It has survived not only fiv
-          e centuries, but also the leap into electronic typesetting, remaining ess
-          entially unchanged. It was popularised in the 1960s with the release of L
-          etraset sheets containing Lorem Ipsum passages, and more recently with deskto
-          p publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem
-           Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has be
-           en the industry's standard dummy text ever since the 1500s, when an unknown printer took a ga
-           lley of type and scrambled it to make a type specimen book. It has survived not only five c
-           enturies, but also the leap into electronic typesetting, remaining essentially unch
-           anged. It was popularised in the 1960s with the release of Letraset sheets co
-           ntaining Lorem Ipsum passages, and more recently with desktop publishing sof
-           tware like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+    <Container maxWidth="md">
+      <h1>About Me</h1>
+      {/* {HideOnScroll()} */}
+      <Grid container spacing={4}>
+        <Grid item xs={12} sm={6} md={6}>
+          <ProfileCard />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Grid container spacing={1}>
+            <Grid item xs={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Education 
+              </Typography>
+            </Grid>
+            <Grid item xs={8}>
+              <Typography variant="body2" color="textPrimary" component="p">
+                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
+              </Typography>
+              <Divider />
+            </Grid>
+            <Grid item xs={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Interests 
+              </Typography>
+            </Grid>
+            <Grid item xs={8}>
+                <InterestChips />
+                <Divider />
+            </Grid>
+            <Grid item xs={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Games 
+              </Typography>
+            </Grid>
+            <Grid item xs={8}>
+                <GamingChips />
+                <Divider />
+            </Grid>
+            <Grid item xs={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Programming Tools and Languages
+              </Typography>
+            </Grid>
+            <Grid item xs={8}>
+                <ProgrammingChips />
+                {/* <Divider /> */}
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          {/* <Avatar alt="Remy Sharp" src={require("../../images/about/headshot.png")} className={bigAvatar}/> */}
+          {IntroPaperSheet()}
+          {ShowOnScroll()}
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          {PaperSheet()}
+          {/* {HideOnScroll()} */}
+        </Grid>
+        <Grid item xs={12}>
+          {PaperSheet()}
+          {/* {HideOnScroll()} */}
+        </Grid>
+      </Grid>
+    </Container>
   </div>
 );
 
 export default AboutPage;
+
+
+
