@@ -15,6 +15,7 @@ import GamingChips from '../modules/Chips/GamingChips'
 import ProgrammingChips from '../modules/Chips/ProgrammingChips'
 
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import AlbumGridList from '../modules/PhotosList';
 
 const bigAvatar = {
   margin: 10,
@@ -29,31 +30,28 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function IntroPaperSheet() {
+function PhotosPaperSheet() {
   const classes = useStyles();
 
   return (
     <div>
       <Paper className={classes.root}>
         <Typography variant="h5" component="h3">
-          Hey! I see you checking me out. That's okay. I'm a pretty cool guy!
+          Hey! I see you checking me out. That's okay. I'm a pretty cool guy! Check out some of the photos I've taken (and taken from close ones!!!)
         </Typography>
       </Paper>
     </div>
   );
 }
 
-function PaperSheet() {
+function GamesPaperSheet() {
   const classes = useStyles();
 
   return (
     <div>
       <Paper className={classes.root}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+          I also play video games!
         </Typography>
       </Paper>
     </div>
@@ -84,7 +82,6 @@ const AboutPage = () => (
   <div>
     
     <Container maxWidth="md">
-      <h1>About Me</h1>
       {/* {HideOnScroll()} */}
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} md={6}>
@@ -134,15 +131,12 @@ const AboutPage = () => (
         </Grid>
         <Grid item xs={12}>
           {/* <Avatar alt="Remy Sharp" src={require("../../images/about/headshot.png")} className={bigAvatar}/> */}
-          {IntroPaperSheet()}
-          {ShowOnScroll()}
+          {PhotosPaperSheet()}
+          <AlbumGridList />
+          {/* {ShowOnScroll()} */}
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          {PaperSheet()}
-          {/* {HideOnScroll()} */}
-        </Grid>
-        <Grid item xs={12}>
-          {PaperSheet()}
+          {GamesPaperSheet()}
           {/* {HideOnScroll()} */}
         </Grid>
       </Grid>
