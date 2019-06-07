@@ -17,11 +17,6 @@ import ProgrammingChips from '../modules/Chips/ProgrammingChips'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import AlbumGridList from '../modules/PhotosList';
 
-const bigAvatar = {
-  margin: 10,
-  width: 500,
-  height: 100,
-};
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -77,9 +72,10 @@ function ShowOnScroll(props) {
   );
 }
 
-
-const AboutPage = () => (
-  <div>
+function AboutPage() {
+  const classes = useStyles();
+  return (
+  <div className={classes.root}>
     
     <Container maxWidth="md">
       {/* {HideOnScroll()} */}
@@ -130,19 +126,20 @@ const AboutPage = () => (
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          {/* <Avatar alt="Remy Sharp" src={require("../../images/about/headshot.png")} className={bigAvatar}/> */}
           {PhotosPaperSheet()}
           <AlbumGridList />
           {/* {ShowOnScroll()} */}
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12}>
           {GamesPaperSheet()}
           {/* {HideOnScroll()} */}
         </Grid>
       </Grid>
     </Container>
   </div>
-);
+  );
+}
+
 
 export default AboutPage;
 
