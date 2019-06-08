@@ -19,8 +19,11 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import AlbumGridList from '../modules/PhotosList';
 
 // for videos
-// import ReactPlayer from 'react-player'
-{/* <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing /> */}
+// import ReactPlayer from 'react-player';
+import ResponsivePlayer from '../modules/ResponsivePlayer';
+
+import GameExpansionPanel from '../modules/GameExpansionPanel'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,7 +39,17 @@ const useStyles = makeStyles(theme => ({
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   },
+  descriptionCard: {
+    padding: theme.spacing(2, 2),
+    textAlign: "center",
+  },
 }));
+
+const urls = {
+  overwatch: "https://www.youtube.com/watch?v=FqnKB22pOC0",
+  apex: "https://www.youtube.com/watch?v=oQtHENM_GZU",
+  league: "https://www.youtube.com/watch?v=IzMnCv_lPxI",
+};
 
 function PhotosPaperSheet() {
   const classes = useStyles();
@@ -60,6 +73,20 @@ function GamesPaperSheet() {
       <Paper className={classes.gamingCard} title="I also play video games!">
         <Typography variant="h5" component="h3">
           {/* I also play video games! */}
+        </Typography>
+      </Paper>
+    </div>
+  );
+}
+
+function DescriptionPaperSheet(text) {
+  const classes = useStyles();
+  return (
+    <div>
+      <Paper className={classes.descriptionCard} title="Why not check out some of the games I play? Here are some trailers.">
+        <Typography variant="h5" component="h3">
+          {/* I also play video games! */}
+            {text}
         </Typography>
       </Paper>
     </div>
@@ -146,23 +173,49 @@ function AboutPage() {
         <Grid item xs={12}>
           {GamesPaperSheet()}
         </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={6}>
+          <GameExpansionPanel />
+        </Grid>
+        <Grid item xs={6}>
+          <VideoGameCard />
+        </Grid>
+          {/* <Grid item xs={12}   
+                container
+                spacing={0}
+                direction="column"
+                alignItems="center"
+                justify="center"
+                style={{ minHeight: '100h' }}
+          >
             <VideoGameCard />
+          </Grid> */}
+          <Grid item xs={12}>
+            {DescriptionPaperSheet("Check out some of the games I play down below!")}
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.overwatch} />
+            <Paper />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.apex} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.league} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.overwatch} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            
+            {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.overwatch} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            {/* <VideoGameCard /> */}
+            <ResponsivePlayer url={urls.overwatch} />
           </Grid>
       </Grid>
     </Container>
