@@ -18,12 +18,9 @@ import VideoGameCard from '../modules/Cards/VideoGameCard'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import AlbumGridList from '../modules/PhotosList';
 
-<<<<<<< HEAD
 // for videos
 // import ReactPlayer from 'react-player'
 {/* <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing /> */}
-=======
->>>>>>> d8a90d63904f9f27fb659003f7e5a6ff387ca43b
 
 const useStyles = makeStyles(theme => ({
   root: {
