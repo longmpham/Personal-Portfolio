@@ -5,7 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import albumData from './album';
+import albumData from './albumData';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,6 +31,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function handleClick(props) {
+    this.setState({color: "red"})
+}
+
 export default function AlbumGridList() {
   const classes = useStyles();
 
@@ -43,11 +47,11 @@ export default function AlbumGridList() {
             <GridListTileBar
               title={tile.title}
               titlePosition="top"
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-                  <StarBorderIcon />
-                </IconButton>
-              }
+            //   actionIcon={
+            //     <IconButton color="inherit" aria-label={`star ${tile.title}`} className={classes.icon} onClick={handleClick}>
+            //       <StarBorderIcon />
+            //     </IconButton>
+            //   }
               actionPosition="left"
               className={classes.titleBar}
             />

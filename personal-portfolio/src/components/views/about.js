@@ -13,20 +13,28 @@ import ProfileCard from '../modules/Cards/ProfileCard';
 import InterestChips from '../modules/Chips/InterestChips'
 import GamingChips from '../modules/Chips/GamingChips'
 import ProgrammingChips from '../modules/Chips/ProgrammingChips'
+import VideoGameCard from '../modules/Cards/VideoGameCard'
 
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import AlbumGridList from '../modules/PhotosList';
 
-const bigAvatar = {
-  margin: 10,
-  width: 500,
-  height: 100,
-};
+// for videos
+// import ReactPlayer from 'react-player'
+{/* <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing /> */}
 
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(6, 2),
     textAlign: "center",
+  },
+  gamingCard: {
+    padding: theme.spacing(18, 0, 18),
+    textAlign: "center",
+    backgroundColor: 'rgba(20,20,20,0.5)',
+    backgroundImage: 'url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Gaming-Logo-Wallpapers-Free-Download.jpg)',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   },
 }));
 
@@ -49,9 +57,9 @@ function GamesPaperSheet() {
 
   return (
     <div>
-      <Paper className={classes.root}>
+      <Paper className={classes.gamingCard} title="I also play video games!">
         <Typography variant="h5" component="h3">
-          I also play video games!
+          {/* I also play video games! */}
         </Typography>
       </Paper>
     </div>
@@ -77,9 +85,10 @@ function ShowOnScroll(props) {
   );
 }
 
-
-const AboutPage = () => (
-  <div>
+function AboutPage() {
+  const classes = useStyles();
+  return (
+  <div className={classes.root}>
     
     <Container maxWidth="md">
       {/* {HideOnScroll()} */}
@@ -130,19 +139,37 @@ const AboutPage = () => (
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          {/* <Avatar alt="Remy Sharp" src={require("../../images/about/headshot.png")} className={bigAvatar}/> */}
           {PhotosPaperSheet()}
           <AlbumGridList />
           {/* {ShowOnScroll()} */}
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12}>
           {GamesPaperSheet()}
-          {/* {HideOnScroll()} */}
         </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <VideoGameCard />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            {/* <VideoGameCard /> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            {/* <VideoGameCard /> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            {/* <VideoGameCard /> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            {/* <VideoGameCard /> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            
+          </Grid>
       </Grid>
     </Container>
   </div>
-);
+  );
+}
+
 
 export default AboutPage;
 

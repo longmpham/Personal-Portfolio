@@ -25,6 +25,10 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
     // backgroundImage: "url(" + Background + ")",
     padding: theme.spacing(22, 0, 22),
+    height: "100%",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   },
   heroButtons: {
     marginTop: theme.spacing(4),
