@@ -22,6 +22,10 @@ const useStyles = makeStyles({
   },
 });
 
+function handleClick() {
+  
+}
+
 const TwitchLink = "https://twitch.tv/noobinator_ow";
 
 function VideoMediaCard() {
@@ -29,7 +33,7 @@ function VideoMediaCard() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea href={TwitchLink}>
         <CardMedia className={classes.image}
           component="img"
           alt="Twitch TV"

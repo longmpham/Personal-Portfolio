@@ -173,10 +173,10 @@ function AboutPage() {
         <Grid item xs={12}>
           {GamesPaperSheet()}
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6} md={6}>
           <GameExpansionPanel />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6} md={6}>
           <VideoGameCard />
         </Grid>
           {/* <Grid item xs={12}   
@@ -205,18 +205,15 @@ function AboutPage() {
             {/* <VideoGameCard /> */}
             <ResponsivePlayer url={urls.league} />
           </Grid>
+          {/* <Grid item xs={12} sm={6} md={4}>
+            <ResponsivePlayer url={urls.overwatch} />
+          </Grid> 
           <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
             <ResponsivePlayer url={urls.overwatch} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
             <ResponsivePlayer url={urls.overwatch} />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
-            <ResponsivePlayer url={urls.overwatch} />
-          </Grid>
+          </Grid> */}
       </Grid>
     </Container>
   </div>

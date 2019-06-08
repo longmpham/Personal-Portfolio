@@ -26,6 +26,7 @@ const ContactPage = React.forwardRef((props, ref) => (
 ));
 
 const GitHubRepo = "https://github.com/longmpham";
+const LinkedIn = "https://www.linkedin.com/in/longpham93/";
 
 function ImgMediaCard() {
   const classes = useStyles();
@@ -59,6 +60,10 @@ function ImgMediaCard() {
         </Button>
         <Button href={GitHubRepo} rel="noopener" size="small" color="primary">
           GitHub
+          <MailIcon />
+        </Button>
+        <Button href={LinkedIn} rel="noopener" size="small" color="primary">
+          LinkedIn
           <MailIcon />
         </Button>
 
