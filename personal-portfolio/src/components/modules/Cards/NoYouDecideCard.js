@@ -17,6 +17,9 @@ const useStyles = makeStyles({
 });
 
 const GitHubRepo = "https://github.com/longmpham/NoYouDecide";
+function GitHubRepoClick () {
+  alert("not done yet! sorry :(");
+}
 
 function ImgMediaCard() {
   const classes = useStyles();
@@ -42,7 +45,8 @@ function ImgMediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={GitHubRepo} rel="noopener" size="small" color="primary">
+        <Button  rel="noopener" size="small" color="primary" onClick={GitHubRepoClick}> 
+          {/* INSERT THIS IN BUTTON WHEN DONE! ->    href={GitHubRepo} */}
           GitHub Repo (Incomplete)
           <LaunchIcon />
         </Button>

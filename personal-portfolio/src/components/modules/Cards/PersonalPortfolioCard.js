@@ -22,7 +22,7 @@ function ImgMediaCard() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea href={GitHubRepo}>
         <CardMedia
           component="img"
           alt="MERN Stack"
