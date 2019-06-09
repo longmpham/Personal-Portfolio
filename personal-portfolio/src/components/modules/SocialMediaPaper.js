@@ -5,9 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import Popover from '@material-ui/core/Popover';
 
 import Button from '@material-ui/core/Button'
-import { Link } from 'react-router-dom'
-
-import ChatIcon from '@material-ui/icons/Chat'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
