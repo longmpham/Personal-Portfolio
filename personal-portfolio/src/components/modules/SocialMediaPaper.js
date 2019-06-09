@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Popover from '@material-ui/core/Popover';
 
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
@@ -23,26 +24,21 @@ const icons = {
     discord: <FontAwesomeIcon icon={faDiscord} size={iconSize}/>,
 }
 
-const LandingPage = React.forwardRef((props, ref) => (
-    <Link innerRef={ref} to="/" {...props} />
-  ));
-  const AboutPage = React.forwardRef((props, ref) => (
-    <Link innerRef={ref} to="/about" {...props} />
-  ));
-  const ContactPage = React.forwardRef((props, ref) => (
-    <Link innerRef={ref} to="/contact" {...props} />
-  ));
-  const ResumePage = React.forwardRef((props, ref) => (
-    <Link innerRef={ref} to="/resume" {...props} />
-  ));
-  const ProjectsPage = React.forwardRef((props, ref) => (
-    <Link innerRef={ref} to="/projects" {...props} />
-  ));
+const links = {
+    GitHub: "https://github.com/longmpham",
+    LinkedIn: "https://www.linkedin.com/in/longpham93/",
+    Discord: "Noobinator#1168",
+    FacebookMessenger: "https://m.me/long.m.pham.93"
+}
+
 
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(3, 2),
     textAlign: "center",
+    // backgroundColor: "#DDD",
+    // border: "solid",
+    margin: "auto",
   },
   icon: {
       fontSize: "3rem",
@@ -51,31 +47,57 @@ const useStyles = makeStyles(theme => ({
 
 export default function PaperSheet() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  function HandleDiscordClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleClose() {
+    setAnchorEl(null);
+  }
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : null;
+
 
   return (
     <div>
-      <Paper className={classes.root} elevation="0">
-        <ChatIcon className={classes.icon} color="secondary" />
-        <Typography variant="h5" component="h3">
-          Reach My Social Media
+      <Paper className={classes.root} elevation="0" square>
+        {/* <ChatIcon className={classes.icon} color="secondary" /> */}
+        <Typography variant="body1" component="h3">
+          {/* DIRECT CONTACT */}
+          Contact me directly!
         </Typography>
         {/* INSERT SOCIAL MEDIA ICONS */}
-        <Button color="primary">
+        <Button href={links.FacebookMessenger} color="primary">
             {icons.facebook}
         </Button>
-        <Button color="primary">
+        <Button href={links.LinkedIn}  color="primary">
             {icons.linkedin}
         </Button>
-        <Button color="primary">
+        <Button href={links.GitHub} color="primary">
             {icons.github}
         </Button>
-        <Button color="primary">
+        <Button aria-describedby={id} onClick={HandleDiscordClick} color="primary">
             {icons.discord}
         </Button>
-        
-        
-        
-        
+        <Popover
+          id={id}
+          open={open}
+          anchorEl={anchorEl}
+          onClose={handleClose}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'center',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'center',
+          }}
+        >
+          <Typography className={classes.root}>{links.Discord}</Typography>
+        </Popover>
       </Paper>
     </div>
   );

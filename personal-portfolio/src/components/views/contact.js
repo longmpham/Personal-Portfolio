@@ -13,7 +13,7 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import MailIcon from '@material-ui/icons/Mail';
 
 import SocialMediaPaper from '../modules/SocialMediaPaper'
 
@@ -66,7 +66,7 @@ function ContactPage() {
           <Grid item xs={12} sm={8} md={5} component={Paper} elevation={4} square>
             <div className={classes.paper}>
               <Avatar className={classes.avatar}>
-                <LockOutlinedIcon />
+                <MailIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
                 Contact Me!

@@ -9,6 +9,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import MailIcon from '@material-ui/icons/Mail'
 
+import SocialMediaPaper from '../SocialMediaPaper'
+
 import { Link } from 'react-router-dom'
 import { Divider } from '@material-ui/core';
 
@@ -19,6 +21,9 @@ const useStyles = makeStyles({
   divider: {
     margin: 10
   },
+  contact: {
+    display: "block",
+  }
 });
 
 const ContactPage = React.forwardRef((props, ref) => (
@@ -53,8 +58,9 @@ function ImgMediaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button component={ContactPage} size="small" color="primary">
+      <CardActions className={classes.contact}>
+        <SocialMediaPaper />
+        {/* <Button component={ContactPage} size="small" color="primary">
           Contact
           <MailIcon />
         </Button>
@@ -65,8 +71,7 @@ function ImgMediaCard() {
         <Button href={LinkedIn} rel="noopener" size="small" color="primary">
           LinkedIn
           <MailIcon />
-        </Button>
-
+        </Button> */}
       </CardActions>
     </Card>
   );
