@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Divider from '@material-ui/core/Divider'
-
+import Container from '@material-ui/core/Container'
 
 
 
@@ -20,52 +20,106 @@ function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={4}>
+      <Grid container spacing={0}>
+
         {/* LEFT COLUMN */}
-        <Grid item xs={12} sm={3} md={4}>
-
-        </Grid>
-
-        {/* RIGHT COLUMN */}
-        <Grid item xs={12} sm={9} md={8}>
-          <Grid container spacing={1}>
-            <Grid item xs={4}>
+        <Grid item xs={12} sm={false} md={4}>
+          <Grid container spacing={4}>
+            <Grid item xs={12}>
               <Typography variant="h6" color="textPrimary" component="h2">
                 Education 
               </Typography>
-            </Grid>
-            <Grid item xs={8}>
               <Typography variant="body2" color="textPrimary" component="p">
                 Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
               </Typography>
               <Divider />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12}>
               <Typography variant="h6" color="textPrimary" component="h2">
-                Interests 
+                Education 
+              </Typography>
+              <Typography variant="body2" color="textPrimary" component="p">
+                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
+              </Typography>
+              <Divider />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Education 
+              </Typography>
+              <Typography variant="body2" color="textPrimary" component="p">
+                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
+              </Typography>
+              <Divider />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Education 
+              </Typography>
+              <Typography variant="body2" color="textPrimary" component="p">
+                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
+              </Typography>
+              <Divider />
+            </Grid>
+          </Grid>
+
+
+
+          <Container maxWidth="sm">
+            <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+          </Container>
+        </Grid>
+
+        {/* RIGHT COLUMN */}
+        <Grid item xs={12} sm={false} md={8}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={false} md={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Education 
               </Typography>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={false} md={8}>
+              <Typography variant="body2" color="textPrimary" component="p">
+                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
+              </Typography>
+              <Divider />
+            </Grid>
+            <Grid item xs={12} sm={false} md={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Publication 
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={false} md={8}>
                 <Divider />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={false} md={4}>
               <Typography variant="h6" color="textPrimary" component="h2">
-                Games 
+                Work Experience 
               </Typography>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={false} md={8}>
                 <Divider />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={false} md={4}>
               <Typography variant="h6" color="textPrimary" component="h2">
-                Programming Tools and Languages
+                Projects
               </Typography>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={false} md={8}>
+                <Divider />
+            </Grid>
+            <Grid item xs={12} sm={false} md={4}>
+              <Typography variant="h6" color="textPrimary" component="h2">
+                Leadership Experience
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={false} md={8}>
                 <Divider />
             </Grid>
           </Grid>
         </Grid>
+
+
 
       </Grid>
     </div>
