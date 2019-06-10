@@ -62,10 +62,10 @@ export default function PaperSheet() {
     <div>
       <Paper className={classes.root} elevation="0" square>
         {/* <ChatIcon className={classes.icon} color="secondary" /> */}
-        <Typography variant="body1" component="h3">
+        {/* <Typography variant="body1" component="h3"> */}
           {/* DIRECT CONTACT */}
-          Contact me directly!
-        </Typography>
+          {/* Contact me directly! */}
+        {/* </Typography> */}
         {/* INSERT SOCIAL MEDIA ICONS */}
         <Button href={links.FacebookMessenger} color="primary">
             {icons.facebook}

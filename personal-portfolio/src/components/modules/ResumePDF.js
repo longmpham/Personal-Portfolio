@@ -36,6 +36,7 @@ class ResumePage extends Component {
             <Page pageNumber={pageNumber} />
           </Document>
         </Grid>
+
       </div>
     );
   }

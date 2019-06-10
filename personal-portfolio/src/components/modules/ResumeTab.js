@@ -45,8 +45,8 @@ function SimpleTabs() {
             <Tab label="PDF" />
             <Tab label="HTML" />
           </Tabs>
-          {value === 0 && <TabContainer><ResumePDF /></TabContainer>}
-          {value === 1 && <TabContainer><ResumeHTML /></TabContainer>}
+          {value === 0 && <TabContainer><ResumeHTML /></TabContainer>}
+          {value === 1 && <TabContainer><ResumePDF /></TabContainer>}
         </Grid>
       </Grid>
 
