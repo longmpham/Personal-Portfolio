@@ -93,7 +93,6 @@ function DescriptionPaperSheet(text) {
   );
 }
 
-
 function HideOnScroll(props) {
   const trigger = useScrollTrigger();
   return (
@@ -179,41 +178,20 @@ function AboutPage() {
         <Grid item xs={12} sm={6} md={6}>
           <VideoGameCard />
         </Grid>
-          {/* <Grid item xs={12}   
-                container
-                spacing={0}
-                direction="column"
-                alignItems="center"
-                justify="center"
-                style={{ minHeight: '100h' }}
-          >
-            <VideoGameCard />
-          </Grid> */}
           <Grid item xs={12}>
             {DescriptionPaperSheet("Check out some of the games I play down below!")}
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
             <ResponsivePlayer url={urls.overwatch} />
             <Paper />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
+
             <ResponsivePlayer url={urls.apex} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            {/* <VideoGameCard /> */}
             <ResponsivePlayer url={urls.league} />
           </Grid>
-          {/* <Grid item xs={12} sm={6} md={4}>
-            <ResponsivePlayer url={urls.overwatch} />
-          </Grid> 
-          <Grid item xs={12} sm={6} md={4}>
-            <ResponsivePlayer url={urls.overwatch} />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ResponsivePlayer url={urls.overwatch} />
-          </Grid> */}
       </Grid>
     </Container>
   </div>

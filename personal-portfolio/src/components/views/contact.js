@@ -12,6 +12,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
+
 
 import MailIcon from '@material-ui/icons/Mail';
 
@@ -20,9 +22,9 @@ import SocialMediaPaper from '../modules/SocialMediaPaper'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4),
+    padding: theme.spacing(4,0,0,0),
     height: "100vh",
-    width: "100%"
+    // width: "100%"
   },
   image: {
     backgroundImage: 'url(https://source.unsplash.com/random)',
@@ -60,10 +62,13 @@ function ContactPage() {
   <div className={classes.root}>
     <Container maxWidth="lg">
       <Grid container spacing={4}>
-          <Grid item xs={false} sm={4} md={7} className={classes.image}>
-            {/* can add text here if you want. */}
-          </Grid>
-          <Grid item xs={12} sm={8} md={5} component={Paper} elevation={4} square>
+          <Hidden xsDown>
+            <Grid item xs={false} sm={5} md={7} className={classes.image}>
+              {/* can add text here if you want. */}
+            </Grid>
+          </Hidden>
+
+          <Grid item xs={12} sm={7} md={5} component={Paper} elevation={4} square>
             <div className={classes.paper}>
               <Avatar className={classes.avatar}>
                 <MailIcon />

@@ -36,7 +36,7 @@ class ResumePage extends Component {
             <Page pageNumber={pageNumber} />
           </Document>
         </Grid>
-
+        Built with LaTeX
       </div>
     );
   }

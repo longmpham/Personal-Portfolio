@@ -44,12 +44,11 @@ const links = {
     LinkedIn: "https://www.linkedin.com/in/longpham93/",
     // Discord: "Noobinator#1168",
     // FacebookMessenger: "https://m.me/long.m.pham.93"
-    email: "not for you",//"longish222@gmail.com",
+    email: "longish222@gmail.com",
 }
 
-// const phone = "+1 (519) 854-4878";
-
-const phone = "not for you";
+const phone = "+1 (519) 854-4878";
+// const phone = "not for you";
 
 
 const useStyles = makeStyles(theme => ({
