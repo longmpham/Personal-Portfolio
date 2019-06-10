@@ -18,28 +18,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* nav bar */}
         <NavBar />
         <AppRouter />
-        {/* landing page / hero */}
-        {/* <Modal> */}
-        {/* <OpenIconSpeedDial /> */}
-        {/* </Modal> */}
-        {/* about me */}
-        {/* <LandingPage />
-        <AboutPage />
-        <ContactPage />
-        <ProjectsPage />
-        <ResumePage /> */}
-
-
-        {/* interests */}
-        {/* projects */}
-        {/* resume CV */}
-        {/* contact me */}
-        {/* app footer bar thing */}
-        {/* <SimpleBottomNav /> */}
-
       </div>
     )
   }

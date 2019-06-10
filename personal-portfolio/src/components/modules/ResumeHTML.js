@@ -10,8 +10,8 @@ import Paper from '@material-ui/core/Paper'
 import MailIcon from '@material-ui/icons/Mail'
 import PhoneIcon from '@material-ui/icons/Phone'
 import PlaceIcon from '@material-ui/icons/Place'
-
 import SkillLines from '../modules/SkillLines'
+import AttributeChips from '../modules/Chips/AttributeChips'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
@@ -45,6 +45,10 @@ const useStyles = makeStyles(theme => ({
   icon: {
 
   },
+  divider: {
+    height: "2px",
+    marginTop: "18px",
+  },
   paper: {
     padding: theme.spacing(6, 2),
   },
@@ -55,7 +59,7 @@ function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <Grid className={classes.paper} container spacing={0} component={Paper} elevation={10}>
+      <Grid className={classes.paper} container spacing={2} component={Paper} elevation={10}>
 
         {/* LEFT COLUMN */}
         <Grid item xs={12} sm={false} md={4}>
@@ -67,7 +71,7 @@ function SimpleTabs() {
               <Typography variant="h6" color="textPrimary" component="p">
                 Master's Graduate Software Engineer
               </Typography>
-              <Divider />
+              <Divider className={classes.divider}/>
             </Grid>
             <Grid item xs={12}>
               <Grid container spacing={2}>
@@ -112,7 +116,7 @@ function SimpleTabs() {
                   </Typography>
                 </Grid>
               </Grid>
-              <Divider />
+              <Divider className={classes.divider}/>
             </Grid>
             <Grid item xs={12}>
               <Typography align="left" variant="h6" color="textPrimary" component="h2">
@@ -124,14 +128,14 @@ function SimpleTabs() {
               my free time, I love to play with my dog, go on backpacking trips, love to
               learn new technology and love playing video games.
               </Typography>
-              <Divider />
+              <Divider className={classes.divider}/>
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h6" color="textPrimary" component="h2">
                 Skills 
               </Typography>
               <SkillLines />
-              <Divider />
+              <Divider className={classes.divider}/>
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h6" color="textPrimary" component="h2">
@@ -169,64 +173,78 @@ function SimpleTabs() {
                   </Typography>
                 </Grid>
               </Grid>
-              <Divider />
+              <Divider className={classes.divider}/>
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h6" color="textPrimary" component="h2">
                 Attributes 
               </Typography>
-              <SkillLines />
-              <Divider />
+                <AttributeChips />
+              <Divider className={classes.divider}/>
             </Grid>
           </Grid>
         </Grid>
 
         {/* RIGHT COLUMN */}
         <Grid item xs={12} sm={false} md={8}>
-          <Grid container spacing={4}>
-            <Grid item xs={12} sm={false} md={4}>
-              <Typography variant="h6" color="textPrimary" component="h2">
+          <Grid container spacing={2}>
+            {/* ITEM ONE */}
+            <Grid item xs={12} sm={false} md={12}>
+              <Typography align="left" variant="h6" color="textPrimary" component="h2">
                 Education 
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={false} md={8}>
-              <Typography variant="body2" color="textPrimary" component="p">
-                Master's in Software Engineering from the University of Western Ontario, located in Ontario, Canada!
-              </Typography>
-              <Divider />
+            <Grid item xs={12} sm={false} md={12}>
+              <Grid container spacing={2}>
+                <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    since 2019
+                  </Typography>
+                </Grid>
+                <Grid item xs={7}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Master's of Engineering Science
+                  </Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Typography align="right" variant="body2" color="textSecondary" component="p">
+                    Ontario, Canada
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                  Software Engineering: Initialization of CNNs using Gabor Filters
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    2012-2016
+                  </Typography>
+                </Grid>
+                <Grid item xs={7}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Bachelor's of Engineering Science
+                  </Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Typography align="right" variant="body2" color="textSecondary" component="p">
+                    Ontario, Canada
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                    Majored in Software Engineering
+                  </Typography>
+                </Grid>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={false} md={4}>
-              <Typography variant="h6" color="textPrimary" component="h2">
-                Publication 
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={false} md={8}>
-                <Divider />
-            </Grid>
-            <Grid item xs={12} sm={false} md={4}>
-              <Typography variant="h6" color="textPrimary" component="h2">
-                Work Experience 
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={false} md={8}>
-                <Divider />
-            </Grid>
-            <Grid item xs={12} sm={false} md={4}>
-              <Typography variant="h6" color="textPrimary" component="h2">
-                Projects
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={false} md={8}>
-                <Divider />
-            </Grid>
-            <Grid item xs={12} sm={false} md={4}>
-              <Typography variant="h6" color="textPrimary" component="h2">
-                Leadership Experience
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={false} md={8}>
-                <Divider />
-            </Grid>
+            {/* ITEM TWO */}
           </Grid>
         </Grid>
 
