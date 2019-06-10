@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+// import IconButton from '@material-ui/core/IconButton';
+// import StarBorderIcon from '@material-ui/icons/StarBorder';
 import albumData from './albumData';
 
 const useStyles = makeStyles(theme => ({
@@ -31,9 +31,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function handleClick(props) {
-    this.setState({color: "red"})
-}
+// function handleClick(props) {
+//     this.setState({color: "red"})
+// }
 
 export default function AlbumGridList() {
   const classes = useStyles();

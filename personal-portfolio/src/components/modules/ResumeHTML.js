@@ -3,9 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import SocialMediaPaper from '../modules/SocialMediaPaper';
 import Paper from '@material-ui/core/Paper';
 
 import MailIcon from '@material-ui/icons/Mail';
@@ -22,7 +20,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 // import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons/faFacebookMessenger'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
+// import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 // import { faExternalLink } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 
 

@@ -29,9 +29,9 @@ const links = {
 function ProfileProgrammingChips() {
   const classes = useStyles();
 
-  function handleDelete() {
-    alert('You can\'t delete my interests!');
-  }
+  // function handleDelete() {
+  //   alert('You can\'t delete my interests!');
+  // }
 
   function handleClick() {
     // alert('Let me google that for you...');

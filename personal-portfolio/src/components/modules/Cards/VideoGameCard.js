@@ -22,9 +22,9 @@ const useStyles = makeStyles({
   },
 });
 
-function handleClick() {
-  
-}
+// function handleClick() {
+//   return
+// }
 
 const TwitchLink = "https://twitch.tv/noobinator_ow";
 

@@ -1,20 +1,14 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Slide from '@material-ui/core/Slide'
 
 import ResumeFile from '../../documents/long_pham_resume_2019_pretty.pdf'
 
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider'
 
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save'
 
-import ResumePDF from '../modules/ResumePDF'
 import ResumeTabs from '../modules/ResumeTab'
 
 const useStyles = makeStyles(theme => ({

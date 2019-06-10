@@ -5,13 +5,12 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import MailIcon from '@material-ui/icons/Mail'
+// import MailIcon from '@material-ui/icons/Mail'
 
 import SocialMediaPaper from '../SocialMediaPaper'
 
-import { Link } from 'react-router-dom'
 import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -26,12 +25,12 @@ const useStyles = makeStyles({
   }
 });
 
-const ContactPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/contact" {...props} />
-));
+// const ContactPage = React.forwardRef((props, ref) => (
+//   <Link innerRef={ref} to="/contact" {...props} />
+// ));
 
-const GitHubRepo = "https://github.com/longmpham";
-const LinkedIn = "https://www.linkedin.com/in/longpham93/";
+// const GitHubRepo = "https://github.com/longmpham";
+// const LinkedIn = "https://www.linkedin.com/in/longpham93/";
 
 function ImgMediaCard() {
   const classes = useStyles();

@@ -16,7 +16,8 @@ const useStyles = makeStyles({
   },
 });
 
-const GitHubRepo = "https://github.com/longmpham/NoYouDecide";
+// const GitHubRepo = "https://github.com/longmpham/NoYouDecide";
+
 function GitHubRepoClick () {
   alert("not done yet! sorry :(");
 }
