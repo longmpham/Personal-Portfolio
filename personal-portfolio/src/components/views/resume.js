@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 
-import ResumeFile from '../../documents/long_pham_resume_2019_pretty.pdf'
+import ResumeFile from '../../documents/long_pham_resume_2019.pdf'
 
 import { makeStyles } from '@material-ui/core/styles';
 
