@@ -292,66 +292,6 @@ function SimpleTabs() {
             {/* ITEM THREE */}
             <Grid item xs={12} sm={false} md={12} className={classes.heading}>
               <Typography align="left" variant="h6" color="textPrimary" component="h2">
-                Work Experience 
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={false} md={12}>
-              <Grid container spacing={2}>
-                <Grid item xs={2}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    since 2019
-                  </Typography>
-                </Grid>
-                <Grid item xs={7}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    Graduate Teaching Assistant
-                  </Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Typography align="right" variant="body2" color="textSecondary" component="p">
-                    Western University
-                  </Typography>
-                </Grid>
-                <Grid item xs={2}>
-                  {/* EMPTY */}
-                </Grid>
-                <Grid item xs={10}>
-                  <Typography align="left" variant="body2" color="textPrimary" component="p">
-                    Lead instructor for multiple courses including (1) microcontrollers,
-                    (2) software design, and (3) operating systems. Within these courses,
-                    I provided office hours, guidance, and organization between labs for
-                    over 500 cumulative students and fellow TAs.
-                  </Typography>
-                </Grid>
-                <Grid item xs={2}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    2016
-                  </Typography>
-                </Grid>
-                <Grid item xs={7}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    Software Instructor for Elementary Students
-                  </Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Typography align="right" variant="body2" color="textSecondary" component="p">
-                    Western University
-                  </Typography>
-                </Grid>
-                <Grid item xs={2}>
-                  {/* EMPTY */}
-                </Grid>
-                <Grid item xs={10}>
-                  <Typography align="left" variant="body2" color="textPrimary" component="p">
-                    Instructed and created a simple HTML, JavaScript and CSS summer
-                    course for 25 elementary students in the summer using the Phaser.io
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-            {/* ITEM FOUR */}
-            <Grid item xs={12} sm={false} md={12} className={classes.heading}>
-              <Typography align="left" variant="h6" color="textPrimary" component="h2">
                 Projects 
               </Typography>
             </Grid>
@@ -402,7 +342,7 @@ function SimpleTabs() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    Personal Website with ReactJS, longpham.ca (server down)
+                    Personal Website with ReactJS, https://longpham.ca
                     <IconButton className={classes.iconButton} aria-label="Link" href={links.GitHub.portfolio}>
                       <LinkIcon className={classes.icon} color="primary" />
                     </IconButton>
@@ -412,6 +352,66 @@ function SimpleTabs() {
                   <Typography align="left" variant="body2" color="textPrimary" component="p">
                   Using the ReactJS library to build a frontend single page application that shows my
                   personal achievements, past history, interests, and my resume.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            {/* ITEM FOUR */}
+            <Grid item xs={12} sm={false} md={12} className={classes.heading}>
+              <Typography align="left" variant="h6" color="textPrimary" component="h2">
+                Work Experience 
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={false} md={12}>
+              <Grid container spacing={2}>
+                <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Since 2019
+                  </Typography>
+                </Grid>
+                <Grid item xs={7}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Graduate Teaching Assistant
+                  </Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Typography align="right" variant="body2" color="textSecondary" component="p">
+                    Western University
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                    Lead instructor for multiple courses including (1) microcontrollers,
+                    (2) software design, and (3) operating systems. Within these courses,
+                    I provided office hours, guidance, and organization between labs for
+                    over 500 cumulative students and fellow TAs.
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    2016
+                  </Typography>
+                </Grid>
+                <Grid item xs={7}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Software Instructor for Elementary Students
+                  </Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Typography align="right" variant="body2" color="textSecondary" component="p">
+                    Western University
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                    Instructed and created a simple HTML, JavaScript and CSS summer
+                    course for 25 elementary students in the summer using the Phaser.io
                   </Typography>
                 </Grid>
               </Grid>

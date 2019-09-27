@@ -2,6 +2,7 @@ import React from 'react';
 import PersonalPortfolioCard from '../modules/Cards/PersonalPortfolioCard';
 import NoYouDecideCard from '../modules/Cards/NoYouDecideCard';
 import KerasGaborCNNCard from '../modules/Cards/KerasGaborCNNCard';
+import GoogleKerasImageClassifierCard from '../modules/Cards/GoogleKerasImageClassifierCard';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid'
 
@@ -21,6 +22,9 @@ const ProjectsPage = () => (
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <KerasGaborCNNCard />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <GoogleKerasImageClassifierCard />
         </Grid>
     </Grid>
 

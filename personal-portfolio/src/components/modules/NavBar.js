@@ -56,7 +56,8 @@ function NavBar() {
             <Button component={AboutPage} color="inherit">About Me</Button>         
             <Button component={ProjectsPage} color="inherit">Projects</Button>
             <Button component={ResumePage} color="inherit">Resume/CV</Button>
-            <Button disabled component={ContactPage} color="inherit">Contact</Button>
+            {/* <Button disabled component={ContactPage} color="inherit">Contact</Button> */}
+            <Button component={ContactPage} color="inherit">Contact</Button>
           </Hidden>
         </Toolbar>
       </AppBar>

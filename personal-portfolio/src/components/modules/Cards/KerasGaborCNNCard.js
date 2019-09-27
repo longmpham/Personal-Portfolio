@@ -15,6 +15,10 @@ const useStyles = makeStyles({
   card: {
     maxWidth: 345,
   },
+  cardHeight: {
+    maxHeight: 300,
+    height:160
+  },
 });
 
 const ContactPage = React.forwardRef((props, ref) => (
@@ -34,7 +38,7 @@ function ImgMediaCard() {
           image= {require("../../../images/projects/keras.png")}
           title="Keras Gabor CNN"
         />
-        <CardContent>
+        <CardContent className={classes.cardHeight}>
           <Typography gutterBottom variant="h5" component="h2">
             Keras Gabor CNN
           </Typography>

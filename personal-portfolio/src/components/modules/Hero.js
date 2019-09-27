@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 
 import { Link } from 'react-router-dom'
 
-// import Background from '../images/hero/grey_background.jpg'
+import Background from '../../images/hero/frontenac.jpg'
 
 const AboutPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/about" {...props} />
@@ -22,8 +22,8 @@ const useStyles = makeStyles(theme => ({
     // display: 'None',
     backgroundColor: 'rgba(20,20,20,0.5)',
     // backgroundColor: 'transparent',
-    backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
-    // backgroundImage: "url(" + Background + ")",
+    // backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
+    backgroundImage: `url(${Background})`,
     padding: theme.spacing(22, 0, 22),
     height: "100%",
     backgroundSize: "cover",
@@ -51,12 +51,12 @@ function Hero() {
         <Container maxWidth='sm'>
             <div className={classes.backColor}>
               <Typography className={classes.title} component='h1' variant='h2' align='center' color='textPrimary' gutterBottom>
-                Welcome to my website!
+                Hey There!
               </Typography>
             </div>
             <div className={classes.backColor}>
               <Typography className={classes.subtitle} variant="h5" align="center" color="textSecondary" paragraph>
-                This is my landing page built with ReactJS (used in the MERN stack!). I hope everything works! If you like my content, please contact me!
+                This is my personal portfolio built with ReactJS (used in the MERN stack!). I'm always looking for improvements so please contact me with any recommendations!
               </Typography>
             </div>
             <div className={classes.heroButtons}>

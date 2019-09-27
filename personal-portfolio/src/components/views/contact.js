@@ -15,6 +15,8 @@ import MailIcon from '@material-ui/icons/Mail';
 
 import SocialMediaPaper from '../modules/SocialMediaPaper'
 
+import Background from '../../images/contact/nalgene.jpg'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -23,10 +25,12 @@ const useStyles = makeStyles(theme => ({
     // width: "100%"
   },
   image: {
-    backgroundImage: 'url(https://source.unsplash.com/random)',
+    // backgroundImage: 'url(https://source.unsplash.com/random)',
+    backgroundImage: `url(${Background})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    height: "500px"
   },
   paper: {
     margin: theme.spacing(8, 4),
@@ -70,9 +74,9 @@ function ContactPage() {
                 <MailIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
-                Contact Me!
+                longmpham93@gmail.com
               </Typography>
-              <form className={classes.form} Validate>
+              {/* <form className={classes.form} Validate>
                 <TextField
                   variant="outlined"
                   margin="normal"
@@ -117,7 +121,7 @@ function ContactPage() {
                 >
                   Send
                 </Button>
-              </form>
+              </form> */}
               <SocialMediaPaper />
             </div>
           </Grid>

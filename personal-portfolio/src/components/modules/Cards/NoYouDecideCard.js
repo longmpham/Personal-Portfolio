@@ -14,6 +14,10 @@ const useStyles = makeStyles({
     maxWidth: 345,
     background: '#ffd7d7',
   },
+  cardHeight: {
+    maxHeight: 300,
+    height:160
+  },
 });
 
 // const GitHubRepo = "https://github.com/longmpham/NoYouDecide";
@@ -35,7 +39,7 @@ function ImgMediaCard() {
           image= {require("../../../images/projects/no_you_decide.jpg")}
           title="No You Decide"
         />
-        <CardContent>
+        <CardContent className={classes.cardHeight}>
           <Typography gutterBottom variant="h5" component="h2">
             No You Decide
           </Typography>

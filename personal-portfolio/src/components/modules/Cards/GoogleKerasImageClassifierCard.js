@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-const GitHubRepo = "https://github.com/longmpham/Personal-Portfolio";
+const GitHubRepo = "https://github.com/longmpham/googleimageskeras";
 
 function ImgMediaCard() {
   const classes = useStyles();
@@ -31,15 +31,16 @@ function ImgMediaCard() {
           component="img"
           alt="MERN Stack"
           height="140"
-          image= {require("../../../images/projects/mern.png")}
+          image= {require("../../../images/projects/keras.png")}
           title="Personal Portfolio"
         />
         <CardContent className={classes.cardHeight}>
           <Typography gutterBottom variant="h5" component="h2">
-          Personal Portfolio
+          Keras Binary Classifier using Google Images
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            My personal portfolio showing my projects and interests using the MERN stack.
+            Using the Keras Framework built off of TensorFlow, I was able to create a simple dog 
+            classifier that pulled any number of images from Google Images using BeautifulSoup's web scraper
           </Typography>
         </CardContent>
       </CardActionArea>
