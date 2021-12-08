@@ -23,7 +23,7 @@ const icons = {
 
 const links = {
     GitHub: "https://github.com/longmpham",
-    LinkedIn: "https://www.linkedin.com/in/longpham93/",
+    LinkedIn: "https://www.linkedin.com/in/longmpham/",
     Discord: "Noobinator#1168",
     FacebookMessenger: "https://m.me/long.m.pham.93"
 }

@@ -38,10 +38,10 @@ const links = {
       phaser: "https://github.com/longmpham/myPhaserGame",
       portfolio: "https://github.com/longmpham/Personal-Portfolio",
     },
-    LinkedIn: "https://www.linkedin.com/in/longpham93/",
+    LinkedIn: "https://www.linkedin.com/in/longmpham/",
     // Discord: "Noobinator#1168",
     // FacebookMessenger: "https://m.me/long.m.pham.93"
-    email: "longish222@gmail.com",
+    email: "longmpham93@gmail.com",
 }
 
 const phone = "Please Reach out via Email";
@@ -216,7 +216,7 @@ function SimpleTabs() {
               <Grid container spacing={2}>
                 <Grid item xs={2}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    since 2019
+                    2016 - 2019
                   </Typography>
                 </Grid>
                 <Grid item xs={6}>
@@ -388,11 +388,6 @@ function SimpleTabs() {
                     to verify the requirements and satisfy the customers' needs. I have also become 
                     a pivotal member of the team to lead younger employees and have become a great 
                     role model and leader.
-                  </Typography>
-                </Grid>
-                <Grid item xs={2}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    2016-2019
                   </Typography>
                 </Grid>
                 <Grid item xs={2}>

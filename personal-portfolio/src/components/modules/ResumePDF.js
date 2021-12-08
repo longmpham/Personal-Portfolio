@@ -24,7 +24,7 @@ class ResumePage extends Component {
     this.setState((state) => ({ pageNumber: 1 }));
   goToNextPage = () =>
     this.setState((state) => ({ pageNumber: 2 }));
- 
+    
   useStyles = makeStyles(theme => ({
     root: {
       padding: theme.spacing(6, 2),

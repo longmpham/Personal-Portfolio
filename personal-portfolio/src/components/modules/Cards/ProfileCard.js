@@ -30,7 +30,7 @@ const useStyles = makeStyles({
 // ));
 
 // const GitHubRepo = "https://github.com/longmpham";
-// const LinkedIn = "https://www.linkedin.com/in/longpham93/";
+// const LinkedIn = "https://www.linkedin.com/in/longmpham/";
 
 function ImgMediaCard() {
   const classes = useStyles();
