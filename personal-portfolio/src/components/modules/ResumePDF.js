@@ -7,7 +7,6 @@ import resume from '../../documents/longpham_resume_2022.pdf'
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-
 class ResumePage extends Component {
 
   state = {
