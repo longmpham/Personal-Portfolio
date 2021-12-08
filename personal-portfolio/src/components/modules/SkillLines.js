@@ -43,22 +43,22 @@ export default function LinearDeterminate() {
       <Typography align="left" variant="body1" color="textPrimary" component="p">
         C
       </Typography>
-      <LinearProgress variant="determinate" value={75} className={classes.bar}/>
+      <LinearProgress variant="determinate" value={65} className={classes.bar}/>
       <br />
       <Typography align="left" variant="body1" color="textPrimary" component="p">
         C++
       </Typography>
-      <LinearProgress variant="determinate" value={60} className={classes.bar}/>
+      <LinearProgress variant="determinate" value={40} className={classes.bar}/>
       <br />
       <Typography align="left" variant="body1" color="textPrimary" component="p">
         Java
       </Typography>
-      <LinearProgress variant="determinate" value={60} className={classes.bar}/>
+      <LinearProgress variant="determinate" value={55} className={classes.bar}/>
       <br />
       <Typography align="left" variant="body1" color="textPrimary" component="p">
         JavaScript
       </Typography>
-      <LinearProgress variant="determinate" value={65} className={classes.bar}/>
+      <LinearProgress variant="determinate" value={70} className={classes.bar}/>
       <br />
       {/* <LinearProgress color="secondary" variant="determinate" value={completed} /> */}
     </div>
