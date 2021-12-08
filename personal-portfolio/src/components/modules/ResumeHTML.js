@@ -45,7 +45,7 @@ const links = {
     email: "longish222@gmail.com",
 }
 
-const phone = "+1 (519) 854-4878";
+const phone = "+1 (778) 789-7599";
 // const phone = "not for you";
 
 
@@ -85,10 +85,10 @@ function SimpleTabs() {
           <Grid container spacing={4}>
             <Grid item xs={12}>
               <Typography variant="h4" color="textPrimary" component="h2">
-                Long Pham 
+                Long Pham
               </Typography>
               <Typography variant="h6" color="textPrimary" component="p">
-                Master's Graduate Software Engineer
+                Software Engineer - Systems Test Engineer (L2)
               </Typography>
               <Divider className={classes.divider}/>
             </Grid>
@@ -107,7 +107,7 @@ function SimpleTabs() {
                 </Grid>
                 <Grid item xs={10}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    London, Ontario, Canada
+                    Burnaby, Britich Columbia, Canada
                   </Typography>
                 </Grid>
                 <Grid item xs={2}>
@@ -142,10 +142,17 @@ function SimpleTabs() {
                 About Me
               </Typography>
               <Typography align="justify" variant="body1" color="textPrimary" component="p">
-              I am a recently graduated at Western University studying a Master’s in
-              Engineering Science doing research on convolutional neural networks. In
-              my free time, I love to play with my dog, go on backpacking trips, love to
-              learn new technology and love playing video games.
+              I am a software engineer currently working at OSI Maritime Ltd which focuses 
+              on providing the #1 solution for providing navies and national guards across 
+              the globe with our WECDIS certified displays (Warship Electronic Chart Display 
+              and Information System). From an engineering standpoint, I read requirements, 
+              I read technical specifications, which allows me to write test procedures to satisfy 
+              customer requirements. After working more than 2 years at this company, I have 
+              become a leader and a role-model leading Co-op students as well as new employees 
+              to get started on within the team. 
+              
+              In my free time, I love to play with my dogs, go on backpacking trips, and I enjoy 
+              learning new technology as well as playing video games.
               </Typography>
               <Divider className={classes.divider}/>
             </Grid>
@@ -171,7 +178,7 @@ function SimpleTabs() {
                     NSERC Research Grant
                   </Typography>
                 </Grid>
-                <Grid item xs={2}>
+                {/* <Grid item xs={2}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
                     2017
                   </Typography>
@@ -190,7 +197,7 @@ function SimpleTabs() {
                   <Typography align="left" variant="body2" color="textPrimary" component="p">
                     Tespa Overwatch Collegiate Top-8
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
               <Divider className={classes.divider}/>
             </Grid>
@@ -321,7 +328,8 @@ function SimpleTabs() {
                     an ARM processor. The watch was able to compute time in milliseconds, seconds,
                     minutes, and hours. The clock featured basic stop, reset, and lap capabilities. This
                     was used for a lab for over 300 3rd year engineering students to practice assembly
-                    language as well as C.
+                    language as well as C. Topics like semaphores, threading, deadlocks were introduced 
+                    as well
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -367,6 +375,33 @@ function SimpleTabs() {
                 <Grid item xs={2}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
                     Since 2019
+                  </Typography>
+                </Grid>
+                <Grid item xs={7}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Software Engineering - Systems Test Engineer (L2)
+                  </Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Typography align="right" variant="body2" color="textSecondary" component="p">
+                    OSI Maritime Systems Ltd
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                    Working through the engineering lifecyle, I read customer requirements, 
+                    consult in design implementation, write test procedures and run through tests 
+                    to verify the requirements and satisfy the customers' needs. I have also become 
+                    a pivotal member of the team to lead younger employees and have become a great 
+                    role model and leader.
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    2016-2019
                   </Typography>
                 </Grid>
                 <Grid item xs={7}>
@@ -424,9 +459,29 @@ function SimpleTabs() {
             </Grid>
             <Grid item xs={12} sm={false} md={12}>
               <Grid container spacing={2}>
+              <Grid item xs={2}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    2016-2019
+                  </Typography>
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body1" color="textPrimary" component="p">
+                    Social Advocate within Work Bubble
+                  </Typography>
+                </Grid>
+                <Grid item xs={2}>
+                  {/* EMPTY */}
+                </Grid>
+                <Grid item xs={10}>
+                  <Typography align="left" variant="body2" color="textPrimary" component="p">
+                    Ever since I started working at OSI, I've been striving for better communication with 
+                    other employees around work and with different teams. I have become a role-model and ran 
+                    individual Lunch-and-Learns with the teams as well as become a pillar for our social events.
+                  </Typography>
+                </Grid>
                 <Grid item xs={2}>
                   <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    2012-2019
+                    Since 2019
                   </Typography>
                 </Grid>
                 <Grid item xs={10}>
@@ -445,25 +500,7 @@ function SimpleTabs() {
                   Maintained over $10,000 worth of camping equipment.
                   </Typography>
                 </Grid>
-                <Grid item xs={2}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    2016-2019
-                  </Typography>
-                </Grid>
-                <Grid item xs={10}>
-                  <Typography align="left" variant="body1" color="textPrimary" component="p">
-                    Co-Captain of the Western’s Collegiate Overwatch Team
-                  </Typography>
-                </Grid>
-                <Grid item xs={2}>
-                  {/* EMPTY */}
-                </Grid>
-                <Grid item xs={10}>
-                  <Typography align="left" variant="body2" color="textPrimary" component="p">
-                    Main player on Western’s Overwatch team for 3 years. Played in national 
-                    tournaments such as TESPA and Ontario Collegiate League.
-                  </Typography>
-                </Grid>
+
               </Grid>
             </Grid>
 

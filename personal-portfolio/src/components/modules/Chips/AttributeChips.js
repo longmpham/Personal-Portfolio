@@ -20,7 +20,7 @@ function AttributeChips() {
   // avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
   return (
     <div className={classes.root}>
-      <Chip size="small" label="Leader" color="secondary" className={classes.chip} />
+      <Chip size="small" label="Leader" color="primary" className={classes.chip} />
       <Chip size="small" label="Excellent Communication Skills" color="primary" className={classes.chip} />
       <Chip size="small" label="Problem Solver" color="primary" className={classes.chip} />
       <Chip size="small" label="Friendly" color="primary" className={classes.chip} />

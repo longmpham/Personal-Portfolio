@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 //   return
 // }
 
-const TwitchLink = "https://twitch.tv/noobinator_ow";
+const TwitchLink = "https://twitch.tv/noobinator__";
 
 function VideoMediaCard() {
   const classes = useStyles();
@@ -39,7 +39,7 @@ function VideoMediaCard() {
           alt="Twitch TV"
           height="240"
           image= {require("../../../images/about/games/twitch.png")}
-          title="Twitch.tv/noobinator_ow"
+          title="Twitch.tv/noobinator__"
           // muted="muted"
         />
         <CardContent>
@@ -53,7 +53,7 @@ function VideoMediaCard() {
       </CardActionArea>
       <CardActions>
         <Button href={TwitchLink} rel="noopener" size="small" color="primary">
-          Twitch.tv/Noobinator_ow
+          Twitch.tv/Noobinator__
           <LaunchIcon />
         </Button>
       </CardActions>
