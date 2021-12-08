@@ -23,7 +23,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 // import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 // import { faExternalLink } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 
-
 const iconSize = "lg";
 const icons = {
     // facebook: <FontAwesomeIcon icon={faFacebookMessenger} size={iconSize}/>,
