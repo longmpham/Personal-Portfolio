@@ -31,7 +31,7 @@ function ImgMediaCard() {
           component="img"
           alt="MERN Stack"
           height="140"
-          image= {require("../../../images/projects/keras.png")}
+          image= {require("../../../images/projects/keras.png").default}
           title="Personal Portfolio"
         />
         <CardContent className={classes.cardHeight}>

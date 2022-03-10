@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from '../views/landing';
 import AboutPage from '../views/about';
 import ContactPage from '../views/contact';
+import BlogPage from '../views/blog';
 import ProjectsPage from '../views/projects';
 import ResumePage from '../views/resume';
 // import FAQPage from '../views/FAQPage';
@@ -14,6 +15,7 @@ const AppRouter = () => (
   <Switch>
   <Route path="/" component={LandingPage} exact={true} />
   <Route path="/about" component={AboutPage} />
+  <Route path="/blog" component={BlogPage} />
   <Route path="/contact" component={ContactPage} />
   <Route path="/resume" component={ResumePage} />
   <Route path="/projects" component={ProjectsPage} />

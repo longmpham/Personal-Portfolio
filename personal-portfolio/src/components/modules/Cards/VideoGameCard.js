@@ -38,7 +38,7 @@ function VideoMediaCard() {
           component="img"
           alt="Twitch TV"
           height="240"
-          image= {require("../../../images/about/games/twitch.png")}
+          image= {require("../../../images/about/games/twitch.png").default}
           title="Twitch.tv/noobinator__"
           // muted="muted"
         />

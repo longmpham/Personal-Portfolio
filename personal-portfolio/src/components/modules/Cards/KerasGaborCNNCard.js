@@ -35,7 +35,7 @@ function ImgMediaCard() {
           component="img"
           alt="Keras"
           height="140"
-          image= {require("../../../images/projects/keras.png")}
+          image= {require("../../../images/projects/keras.png").default}
           title="Keras Gabor CNN"
         />
         <CardContent className={classes.cardHeight}>

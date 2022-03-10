@@ -9,6 +9,14 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Avatar from '@material-ui/core/Avatar';
 import { Divider } from '@material-ui/core';
 
+// import overwatch from "../../images/about/games/overwatch.png";
+// import apex from "../../images/about/games/apexlegends.png";
+// import league from "../../images/about/games/league.png";
+// import borderlands from "../../images/about/games/borderlands2.png";
+// import diablo from "../../images/about/games/diablo.png";
+// import gm_ow from "../../images/about/games/gm_ow.png";
+// import top500 from "../../images/about/games/top500.gif";
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
@@ -29,14 +37,24 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const images = {
-  overwatch: require("../../images/about/games/overwatch.png"),
-  apex: require("../../images/about/games/apexlegends.png"),
-  league: require("../../images/about/games/league.png"),
-  borderlands: require("../../images/about/games/borderlands2.png"),
-  diablo: require("../../images/about/games/diablo.png"),
-  gm_ow: require("../../images/about/games/gm_ow.png"),
-  top500: require("../../images/about/games/top500.gif"),
+  overwatch: require("../../images/about/games/overwatch.png").default,
+  apex: require("../../images/about/games/apexlegends.png").default,
+  league: require("../../images/about/games/league.png").default,
+  borderlands: require("../../images/about/games/borderlands2.png").default,
+  diablo: require("../../images/about/games/diablo.png").default,
+  gm_ow: require("../../images/about/games/gm_ow.png").default,
+  top500: require("../../images/about/games/top500.gif").default,
 }
+
+// const images = {
+//   overwatch: "/static/media/overwatch.e7bba908.png",
+//   apex: "/static/media/apexlegends.da24c669.png",
+//   league: "/static/media/league.e50e0432.png",
+//   borderlands: "/static/media/borderlands2.08a41351.png",
+//   diablo: "/static/media/diablo.ef47281b.png",
+//   gm_ow: "/static/media/gm_ow.png",
+//   top500: "/static/media/top500.gif"
+// }
 
 function SimpleExpansionPanel() {
   const classes = useStyles();

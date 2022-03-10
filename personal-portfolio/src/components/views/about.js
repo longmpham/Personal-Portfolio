@@ -20,7 +20,6 @@ import AlbumGridList from '../modules/PhotosList';
 // for videos
 // import ReactPlayer from 'react-player';
 import ResponsivePlayer from '../modules/ResponsivePlayer';
-
 import GameExpansionPanel from '../modules/GameExpansionPanel'
 
 

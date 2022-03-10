@@ -36,7 +36,7 @@ function ImgMediaCard() {
           component="img"
           alt="Question Mark in Food"
           height="140"
-          image= {require("../../../images/projects/no_you_decide.jpg")}
+          image= {require("../../../images/projects/no_you_decide.jpg").default}
           title="No You Decide"
         />
         <CardContent className={classes.cardHeight}>

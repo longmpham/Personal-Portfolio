@@ -42,7 +42,7 @@ function ImgMediaCard() {
           component="img"
           alt="Profile Picture"
           height="300"
-          image= {require("../../../images/about/headshot.png")}
+          image= {require("../../../images/about/headshot.png").default}
           title="Profile Picture"
         />
         <CardContent>

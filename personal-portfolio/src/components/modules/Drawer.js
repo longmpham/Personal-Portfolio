@@ -33,6 +33,9 @@ const LandingPage = React.forwardRef((props, ref) => (
 const AboutPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/about" {...props} />
 ));
+const BlogsPage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/blog" {...props} />
+));
 const ContactPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/contact" {...props} />
 ));
@@ -79,7 +82,13 @@ function Drawer() {
           </ListItemIcon>  
           <ListItemText primary="About Me" />
         </ListItem>
-        <ListItem button component={ContactPage}>
+        <ListItem button component={BlogsPage}>
+          <ListItemIcon>
+            <MailIcon />
+          </ListItemIcon>  
+          <ListItemText primary="Blogs" />
+        </ListItem>
+        <ListItem button component={BlogsPage}>
           <ListItemIcon>
             <MailIcon />
           </ListItemIcon>  

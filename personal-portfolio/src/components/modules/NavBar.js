@@ -31,6 +31,9 @@ const AboutPage = React.forwardRef((props, ref) => (
 const ContactPage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/contact" {...props} />
 ));
+const BlogPage = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/blog" {...props} />
+));
 const ResumePage = React.forwardRef((props, ref) => (
   <Link innerRef={ref} to="/resume" {...props} />
 ));
@@ -55,6 +58,7 @@ function NavBar() {
           <Hidden smDown>
             <Button component={AboutPage} color="inherit">About Me</Button>         
             <Button component={ProjectsPage} color="inherit">Projects</Button>
+            <Button component={BlogPage} color="inherit">Blog</Button>
             <Button component={ResumePage} color="inherit">Resume/CV</Button>
             {/* <Button disabled component={ContactPage} color="inherit">Contact</Button> */}
             <Button component={ContactPage} color="inherit">Contact</Button>
