@@ -3,16 +3,37 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from "react-router-dom"
 
 export default function TemporaryDrawer() {
-  const pages = ["About Me", "Projects", "Blog", "Resume/CV", "Contact"];
+  const pages = [
+    {
+      "title": "About Me",
+      "link": "/about",
+    },
+    {
+      "title": "Projects",
+      "link": "/projects",
+    },
+    {
+      "title": "Blog",
+      "link": "/blog",
+    },
+    {
+      "title": "Resume/CV",
+      "link": "/resume",
+    },
+    {
+      "title": "Contact",
+      "link": "/contact",
+    },
+  ]
 
   const [drawer, setDrawer] = React.useState(false);
 
@@ -34,12 +55,12 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {pages.map((text, index) => (
-          <ListItem button key={text}>
+        {pages.map((page, index) => (
+          <ListItem component={Link} to={page.link} button key={page.title}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <ListItemText primary={page.title} />
           </ListItem>
         ))}
       </List>

@@ -12,11 +12,35 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
+import { Link } from "react-router-dom"
+
 import Drawer from "../modules/Drawer"
 
 
 const NavBar = () => {
-  const pages = ["Products", "Pricing", "Blog"];
+
+  const pages = [
+    {
+      "title": "About Me",
+      "link": "/about",
+    },
+    {
+      "title": "Projects",
+      "link": "/projects",
+    },
+    {
+      "title": "Blog",
+      "link": "/blog",
+    },
+    {
+      "title": "Resume/CV",
+      "link": "/resume",
+    },
+    {
+      "title": "Contact",
+      "link": "/contact",
+    },
+  ]
 
   return (
     <AppBar position="static">
@@ -25,7 +49,11 @@ const NavBar = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           News
         </Typography>
-        <Button color="inherit">Login</Button>
+        {pages.map(page => {
+          return (
+            <Button component={Link} to={`${page.link}`} color="inherit">{page.title}</Button>
+          )
+        })}
       </Toolbar>
     </AppBar>
 
