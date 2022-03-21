@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 
 import LandingPage from './components/Landing/landing';
-// import AboutPage from './components/views/about';
+import AboutPage from './components/About/about';
 // import ContactPage from './components/views/contact';
 // import BlogPage from './components/views/blog';
 // import ProjectsPage from './components/views/projects';
@@ -24,7 +24,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/about" element={<AboutPage />} /> */}
+        <Route path="/about" element={<AboutPage />} />
         {/* <Route path="/blog" element={<BlogPage />} /> */}
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         {/* <Route path="/resume" element={<ResumePage />} /> */}

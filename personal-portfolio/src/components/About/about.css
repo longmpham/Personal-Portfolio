@@ -1,0 +1,59 @@
+.about-root-container * {
+  margin: 0;
+  text-decoration: none;
+}
+
+.about-hero {
+  background-image: url("../../images/hero/frontenac.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-who-left-container {
+  flex: 1 1 70%;
+}
+.about-who-right-container {
+  flex: 1 1 30%;
+}
+
+.about-card {
+  flex: 1 1 32%;
+}
+
+.about-gaming-left-container {
+  flex: 1 1 70%;
+}
+
+.about-gaming-right-container {
+  flex: 1 1 30%;
+}
+
+.about-adventure-left-container {
+  flex: 1 1 30%;
+}
+
+.about-adventure-right-container {
+  flex: 1 1 70%;
+}
+
+.about-coding-left-container {
+  flex: 1 1 70%;
+}
+
+.about-coding-right-container {
+  flex: 1 1 30%;
+}
+
+.about-image-collage {
+  width: 100px;
+  height: 100px;
+}
