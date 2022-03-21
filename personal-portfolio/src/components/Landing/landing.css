@@ -1,0 +1,23 @@
+.hero {
+  display: None;
+  background-color: rgba(20,20,20,0.5);
+  background-color: transparent;
+  background-image: url(https://source.unsplash.com/user/erondu);
+  padding: 30px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heroButtons {
+  margin-top: 30px;
+}
+.backColor {
+  background-color: 'rgba(0,0,0,0.2)',
+}
+.title {
+  color: 'rgba(255,255,255,1)',
+}
+.subtitle {
+  color: 'rgba(255,255,255,0.9)',
+} 

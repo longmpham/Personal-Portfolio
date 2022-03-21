@@ -11,13 +11,12 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-
+// import makeStyles from '@mui/styles/makeStyles';
 import { Link } from "react-router-dom"
 
 import Drawer from "../modules/Drawer"
 
-
-const NavBar = () => {
+const Navbar = () => {
 
   const pages = [
     {
@@ -46,37 +45,18 @@ const NavBar = () => {
     <AppBar position="static">
       <Toolbar>
         <Drawer />
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          News
-        </Typography>
+        <Button color="inherit" component={Link} to="/"sx={{ justifyContent: "left", flexGrow: 1 }} >
+        <Typography variant="h6"  >
+          Long Pham
+        </Typography></Button>
         {pages.map(page => {
           return (
-            <Button component={Link} to={`${page.link}`} color="inherit">{page.title}</Button>
+            <Button key={page.title} sx={{ display: { xs: 'none', md: 'flex' } }} component={Link} to={`${page.link}`} color="inherit">{page.title}</Button>
           )
         })}
       </Toolbar>
     </AppBar>
-
-    // <>
-    //   <AppBar position="static">
-    //     <Toolbar>
-    //       <Drawer />
-    //       <Typography variant="h6" color="inherit">
-    //         {/* <Button className={classes.title} component={LandingPage} color="inherit">Home</Button> */}
-    //         Long Pham
-    //       </Typography>
-    //       <Hidden smDown>
-    //         <Button component={AboutPage} color="inherit">About Me</Button>
-    //         <Button component={ProjectsPage} color="inherit">Projects</Button>
-    //         <Button component={BlogPage} color="inherit">Blog</Button>
-    //         <Button component={ResumePage} color="inherit">Resume/CV</Button>
-    //         {/* <Button disabled component={ContactPage} color="inherit">Contact</Button> */}
-    //         <Button component={ContactPage} color="inherit">Contact</Button>
-    //       </Hidden>
-    //     </Toolbar>
-    //   </AppBar>
-    // </>
   );
 };
 
-export default NavBar;
+export default Navbar;

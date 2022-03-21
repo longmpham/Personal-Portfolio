@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save'
 
-import ResumeTabs from '../modules/ResumeTab'
+import ResumeTabs from './ResumeTab'
 
 const useStyles = makeStyles(theme => ({
   root: {

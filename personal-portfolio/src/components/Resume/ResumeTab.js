@@ -7,8 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 
 
-import ResumePDF from '../modules/ResumePDF'
-import ResumeHTML from '../modules/ResumeHTML'
+import ResumePDF from './ResumePDF'
+import ResumeHTML from './ResumeHTML'
 
 function TabContainer(props) {
   return (
