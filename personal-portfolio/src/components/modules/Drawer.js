@@ -1,129 +1,64 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-// import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-// import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-// import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
-import PersonIcon from '@material-ui/icons/Person';
-import FolderIcon from '@material-ui/icons/Folder';
-import FolderSharedIcon from '@material-ui/icons/FolderShared';
-import HomeIcon from '@material-ui/icons/Home';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
+import MenuIcon from '@mui/icons-material/Menu';
 
-import { Link } from 'react-router-dom'
+export default function TemporaryDrawer() {
+  const pages = ["About Me", "Projects", "Blog", "Resume/CV", "Contact"];
 
-const useStyles = makeStyles(theme => ({
-  list: {
-    width: 250,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-}));
+  const [drawer, setDrawer] = React.useState(false);
 
-const LandingPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/" {...props} />
-));
-const AboutPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/about" {...props} />
-));
-const BlogsPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/blog" {...props} />
-));
-const ContactPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/contact" {...props} />
-));
-const ResumePage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/resume" {...props} />
-));
-const ProjectsPage = React.forwardRef((props, ref) => (
-  <Link innerRef={ref} to="/projects" {...props} />
-));
-
-
-function Drawer() {
-  const classes = useStyles();
-  const [state, setState] = React.useState({
-    left: false,
-
-  });
-
-  const toggleDrawer = (side, open) => event => {
-    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
-
-    setState({ ...state, [side]: open });
+    setDrawer(open);
   };
 
-  const sideList = side => (
-    <div
-      className={classes.list}
+  const list = (anchor) => (
+    <Box
+      sx={{ width: 250 }}
       role="presentation"
-      onClick={toggleDrawer(side, false)}
-      onKeyDown={toggleDrawer(side, false)}
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
     >
       <List>
-        <ListItem button component={LandingPage}>
-          <ListItemIcon>
-            <HomeIcon />
-          </ListItemIcon>  
-          <ListItemText primary="Home" />
-        </ListItem>
-        <ListItem button component={AboutPage}>
-          <ListItemIcon>
-            <PersonIcon />
-          </ListItemIcon>  
-          <ListItemText primary="About Me" />
-        </ListItem>
-        <ListItem button component={BlogsPage}>
-          <ListItemIcon>
-            <MailIcon />
-          </ListItemIcon>  
-          <ListItemText primary="Blogs" />
-        </ListItem>
-        <ListItem button component={BlogsPage}>
-          <ListItemIcon>
-            <MailIcon />
-          </ListItemIcon>  
-          <ListItemText primary="Contact" />
-        </ListItem>
-        <ListItem button component={ProjectsPage}>
-          <ListItemIcon>
-            <FolderIcon />
-          </ListItemIcon>  
-          <ListItemText primary="Projects" />
-        </ListItem>
-        <ListItem button component={ResumePage}>
-          <ListItemIcon>
-            <FolderSharedIcon />
-          </ListItemIcon>  
-          <ListItemText primary="Resume/CV" />
-        </ListItem>
+        {pages.map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemIcon>
+              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
       </List>
-    </div>
+    </Box>
   );
 
   return (
     <div>
-      <IconButton onClick={toggleDrawer('left', true)} edge="start" className={classes.menuButton} color="inherit" aria-label="Menu">
+      <IconButton color="inherit" onClick={toggleDrawer(true)}>
         <MenuIcon />
       </IconButton>
-      <SwipeableDrawer
-        open={state.left}
-        onClose={toggleDrawer('left', false)}
-        onOpen={toggleDrawer('left', true)}
+      <Drawer
+        anchor="left"
+        open={drawer}
+        onClose={toggleDrawer(false)}
       >
-        {sideList('left')}
-      </SwipeableDrawer>
+        {list("left")}
+      </Drawer>
+      
     </div>
   );
 }
-
-export default Drawer;
