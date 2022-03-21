@@ -16,44 +16,41 @@
 
 .about-container {
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 50px auto;
+  padding: 50px auto;
+
 }
 
-.about-who-left-container {
-  flex: 1 1 70%;
+.about-container:nth-child(odd) {
+  background-color: rgb(245, 255, 245)
 }
-.about-who-right-container {
-  flex: 1 1 30%;
+.about-container:nth-child(even) {
+  /* background-color: lightblue */
+}
+
+.about-left-container {
+  flex: 1 1 60%;
+  margin: 20px;
+}
+.about-right-container {
+  flex: 1 1 40%;
+  margin: 20px;
 }
 
 .about-card {
   flex: 1 1 32%;
-}
-
-.about-gaming-left-container {
-  flex: 1 1 70%;
-}
-
-.about-gaming-right-container {
-  flex: 1 1 30%;
-}
-
-.about-adventure-left-container {
-  flex: 1 1 30%;
-}
-
-.about-adventure-right-container {
-  flex: 1 1 70%;
-}
-
-.about-coding-left-container {
-  flex: 1 1 70%;
-}
-
-.about-coding-right-container {
-  flex: 1 1 30%;
+  margin: 20px;
+  padding: 50px;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: darkgreen;
 }
 
 .about-image-collage {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
