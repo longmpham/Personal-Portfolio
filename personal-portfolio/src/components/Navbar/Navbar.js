@@ -1,20 +1,11 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-// import makeStyles from '@mui/styles/makeStyles';
+
 import { Link } from "react-router-dom"
 
-import Drawer from "../modules/Drawer"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdCancel } from "react-icons/md" 
+
+import "./Navbar.css"
 
 const Navbar = () => {
 
@@ -40,22 +31,37 @@ const Navbar = () => {
       "link": "/contact",
     },
   ]
+  
+  const [isDrawer, setIsDrawer] = React.useState(false);
+
+  const handleClick = () => {
+    setIsDrawer(prevIsDrawer => !prevIsDrawer)
+  }
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Drawer />
-        <Button color="inherit" component={Link} to="/"sx={{ justifyContent: "left", flexGrow: 1 }} >
-        <Typography variant="h6"  >
-          Long Pham
-        </Typography></Button>
+    <nav className="navbar">
+      <h1 className="navbar-middle navbar-title"><Link to="/">Long Pham</Link></h1>
+      <ul className="navbar-right navbar-menu-buttons">
         {pages.map(page => {
           return (
-            <Button key={page.title} sx={{ display: { xs: 'none', md: 'flex' } }} component={Link} to={`${page.link}`} color="inherit">{page.title}</Button>
-          )
-        })}
-      </Toolbar>
-    </AppBar>
+            <li className="navbar-menu-button" key={page.title}><Link to={`${page.link}`}>{page.title}</Link></li>
+            )
+          })}
+      </ul>
+      {isDrawer ?
+      <button className="navbar-menu-hamburger" onClick={handleClick}><MdCancel size={40} /></button>
+      : <button className="navbar-menu-hamburger" onClick={handleClick}><GiHamburgerMenu size={40} /></button>
+      }
+      {isDrawer && 
+      <ul onClick={handleClick} className="navbar-sidebar">
+        {pages.map(page => {
+          return (
+            <li className="navbar-sidebar-button" key={page.title}><Link to={`${page.link}`}>{page.title}</Link></li>
+            )
+          })}
+      </ul>
+      }
+    </nav>
   );
 };
 
