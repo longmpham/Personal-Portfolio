@@ -20,7 +20,10 @@
   /* align-items: center; */
   margin: 50px auto;
   padding: 50px auto;
+}
 
+.about-container h1, p {
+  padding: 20px;
 }
 
 .about-container:nth-child(odd) {
@@ -53,4 +56,53 @@
 .about-image-collage {
   width: 50px;
   height: 50px;
+}
+
+.about-image-adventure-collage-container {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-image-adventure-collage {
+  flex: 1 1 30%;
+  width: 100px;
+  height: 100px;
+}
+
+.about-body-button {
+  display: inline-block;
+  /* flex-wrap: nowrap; */
+  box-shadow: 0 0 10px black;
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+  /* align-self: flex-start */
+  /* flex-basis: auto */
+  padding: 20px 0;
+  margin: 10px 20px;
+}
+
+.about-body-button a {
+  /* width: 100%; */
+  padding: 20px 60px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  /* background-color: rgba(0,0,0,0.8); */
+}
+
+.about-body-button a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.about-body-button:nth-child(3) {
+  background-color: green;
+}
+
+.about-body-button:nth-child(4) {
+  background-color: darkgreen;
 }
