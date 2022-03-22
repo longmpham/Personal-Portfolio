@@ -8,8 +8,7 @@
 }
 
 .hero {
-  background-color: rgba(20,20,20,0.5);
-  /* background-color: transparent; */
+
   background-image: url("../../images/hero/frontenac.jpg");
   width: 100vw;
   height: 100vh;
