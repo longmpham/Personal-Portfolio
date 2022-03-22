@@ -22,9 +22,135 @@
 }
 
 .resume-left-heading-container {
-  padding: 0 2px;
-  border: 1px solid black
+  /* padding: 0 2px; */
+  /* border: 1px solid black; */
+  margin: 0;
 }
 .resume-right-heading-container {
-  border: 1px solid black
+  /* border: 1px solid black; */
+  margin: 0;
+}
+
+.resume-profile-image {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 999px;
+  box-shadow: 0 0 5px black;
+}
+
+.resume-title h2 {
+  font-weight: 400;
+}
+
+.resume-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.resume-contact h4 {
+  margin: 0;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: left; */
+}
+
+.resume-contact a {
+  text-decoration: none;
+  color: inherit;
+}
+.resume-contact svg {
+  font-size: 20px;
+  color: green;
+}
+
+.resume-section-body-even {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.resume-section-body-even *:first-child{
+  flex: 1 1 10%;
+  margin: 0;
+}
+.resume-section-body-even *:nth-child(2n){
+  flex: 1 1 60%;
+  margin: 0;
+}
+.resume-section-body-even *:nth-child(3n){
+  flex: 1 1 20%;
+  margin: 0;
+}
+
+.resume-section-title {
+  margin: 0;
+  background-color:rgba(0, 128, 0, 0.1);
+}
+
+.resume-section-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  /* gap: 10px; */
+}
+
+.resume-section-header {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.resume-section-body h4:first-child {
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+.resume-section-body h6:nth-child(2n) {
+  width: 20%;
+  margin-bottom: 2%;
+  flex-grow: 1;
+  text-align: right;
+}
+.resume-section-body *:nth-child(3n) {
+  width: 100%;
+  margin: 0;
+}
+
+.resume-section-body ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.resume-section-body ul li {
+
+}
+
+.resume-section-body-simple {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.resume-section-body-simple *:first-child{
+  flex: 1 1 100%;
+  margin-top: 10px;
+}
+.resume-section-body-simple *:nth-child(2n){
+  flex: 1 1 100%;
+  margin: 0;
+}
+
+@media (max-width: 691px) {
+  .resume-profile-image {
+    height: 200px;
+    width: 200px;
+    
+  }
 }
