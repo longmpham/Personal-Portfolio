@@ -1,0 +1,30 @@
+.resume-root-container {
+  display: flex;
+  box-shadow: 0 0 20px black;
+  margin: 5% 10%;
+  gap: 2%;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.resume-left-container {
+  display: flex;
+  flex: 1 1 28%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.resume-right-container {
+  display: flex;
+  flex: 1 1 68%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.resume-left-heading-container {
+  padding: 0 2px;
+  border: 1px solid black
+}
+.resume-right-heading-container {
+  border: 1px solid black
+}
