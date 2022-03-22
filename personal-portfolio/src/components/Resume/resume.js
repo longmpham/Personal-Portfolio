@@ -114,11 +114,7 @@ const ResumePage = () => {
             <p>Created a simple shooter using PhaserJS. Created simple AWSD controls using the mouse pointer to aim and shoot with. Extras such as high scores, lives, and weapon boosts were implemented as features. This game was created with JavaScript and was later used as a curriculum for 25 Grade 8 students interested in coding.</p>
           </div>
           <div className="resume-section-body-simple">
-          <h4 className="resume-section-header">Personal Website with ReactJS</h4>
-            <p>Created a simple shooter using PhaserJS. Created simple AWSD controls using the mouse pointer to aim and shoot with. Extras such as high scores, lives, and weapon boosts were implemented as features. This game was created with JavaScript and was later used as a curriculum for 25 Grade 8 students interested in coding.</p>
-          </div>
-          <div className="resume-section-body-simple">
-          <h4 className="resume-section-header">Phasio.io 2-D Meteor Shooter Sandbox</h4>
+          <h4 className="resume-section-header">Personal Website with ReactJS, <a href="/">ICONS</a></h4>
             <p>Using the ReactJS library to build a frontend single page application that shows my personal achievements, past history, interests, and my resume.</p>
           </div>
         </div>
