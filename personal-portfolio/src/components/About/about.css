@@ -49,7 +49,10 @@
   padding: 50px auto;
 }
 
-.about-container h1, p {
+.about-container h1 {
+  padding: 20px;
+}
+.about-container p {
   padding: 20px;
 }
 

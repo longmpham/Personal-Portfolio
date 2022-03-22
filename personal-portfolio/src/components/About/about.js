@@ -37,7 +37,7 @@ const AboutPage = () => {
         <div className="about-container">
           <div className="about-left-container">
             <h1>Who Am I?</h1>
-            <p>Here's my story. I graduated with a Master's degree for Software Engineering at the University of Western Ontario (aka Western University). I then started my career working at OSI Maritime Systems and as a side gig, I just learn about random things. I love to hike and I'm also a self-proclaimed "good" gamer.</p>
+            <p>Here's my story. I graduated with a Master's degree for Software Engineering at the University of Western Ontario (aka Western University). I then started my career working at OSI Maritime Systems and as a side gig, I just learn about random things. I love to hike and I'm also a self-proclaimed "good" gamer. Also, I really love dogs.</p>
           </div>
           <div className="about-right-container">
             <img src={profilePicture} />
@@ -102,7 +102,6 @@ const AboutPage = () => {
               <DiMongodb />
               <SiExpress />
               <SiKeras />
-
             </div>
           </div>
         </div>

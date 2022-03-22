@@ -1,66 +1,46 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import blogData from '../../documents/blogData.js'
-import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+import React from "react"
 
-const Blog = () => {
+import blogData from "./blogData"
+import "./blog.css"
 
-  const useStyles = makeStyles(theme => ({
-    blogArticle: {
-      padding: theme.spacing(2),
-      textAlign: "left",
-      margin: theme.spacing(2)
-    },
-  }));
+const BlogPage = () => {
 
-  const [blogs, setBlogs] = React.useState(blogData)
+  const [posts, setPosts] = React.useState(blogData)
+  // console.log(post)
 
-  const classes = useStyles();
-  
+
   return (
     <>
-      <Container className="root" maxWidth="md">
-        {/* main blog */}
-        <Grid container spacing={0}>
-          {/* main items */}
-          <Grid item md={12}>
-            {blogs.map(blog => {
-              return (
-                <Paper className={classes.blogArticle}>
-                  <Typography variant="h3">{blog.title}</Typography>
-                  <Typography variant="body2">{blog.date}</Typography>
-                  {blog.body.map(paragraph => {
-                    return (
-                      <div>
-                        <Typography variant="body1">{paragraph}</Typography>
-                        <br />
-                      </div>
-                    )
-                  })}
-                </Paper>
-              )
-            })}
-          </Grid>
-          {/* <Grid item md={2}>
-            <Paper className={classes.blogArticle}>
-              <Button>{blogs.map(blog => {
-                return (
-                  <>
-                    <Typography variant="h6">{blog.title}</Typography>
-                    <Typography variant="body2">{blog.date}</Typography>
-                  </>
-                )
-              })}</Button>
-            </Paper>
-          </Grid> */}
-        </Grid>
-      </Container>
+      <div className="blog-container">
+        <div className="blog-main">
+          {posts.map(post => {
+            return (
+              <div className="blog-post" key={post.id}>
+                <h1 className="blog-title">{post.title}</h1>
+                <h6 className="blog-date">{post.date}</h6>
+                {post.body.map(paragraph => {
+                  return (
+                    <p className="blog-body">{paragraph}</p>
+                  )
+                })}
+              </div>
+            )
+          })}
+        </div>
+        {/* sidebar needs links (react useRef might be useful here...) */}
+        {/* <div className="blog-sidebar">
+        {posts.map(post => {
+            return (
+              <div className="blog-sidebar" key={post.id}>
+                <h1 className="blog-title">{post.title}</h1>
+                <h6 className="blog-date">{post.date}</h6>
+              </div>
+            )
+          })}
+        </div> */}
+      </div>
     </>
   )
 }
 
-export default Blog
+export default BlogPage

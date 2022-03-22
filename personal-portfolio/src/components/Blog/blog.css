@@ -1,0 +1,49 @@
+.blog-container {
+  margin: 5% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%
+}
+
+.blog-main {
+  background-color: antiquewhite;
+  flex: 1 1 68%
+}
+
+.blog-sidebar {
+  background-color: aliceblue;
+  flex: 1 1 30%;
+}
+
+/* container */
+.blog-post {
+  border-bottom: 1px dotted black;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+}
+
+.blog-title {
+  padding: 5px 20px;
+  margin: 10px;
+}
+
+.blog-date {
+  padding: 0px 20px;
+  margin: 10px;
+}
+
+.blog-body {
+  padding: 0px 20px;
+  margin: 10px;
+}
+
+@media (max-width: 768px){
+  .blog-sidebar {
+    display: none;
+  }
+  .blog-main {
+    flex: 1 1 100%;
+  }
+}
