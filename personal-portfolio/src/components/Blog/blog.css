@@ -18,6 +18,8 @@
 /* container */
 .blog-post {
   border-bottom: 1px dotted black;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-post:last-child {
@@ -37,6 +39,15 @@
 .blog-body {
   padding: 0px 20px;
   margin: 10px;
+}
+
+.blog-show-button {
+  padding: 5px;
+  margin: 10px;
+  max-width: 30px;
+  border-radius: 999px;
+  background-color: green;
+  color: white;
 }
 
 @media (max-width: 768px){
