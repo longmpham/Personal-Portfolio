@@ -1,38 +1,40 @@
 import React from 'react';
-import PersonalPortfolioCard from '../modules/Cards/PersonalPortfolioCard';
-import NoYouDecideCard from '../modules/Cards/NoYouDecideCard';
-import KerasGaborCNNCard from '../modules/Cards/KerasGaborCNNCard';
-import GoogleKerasImageClassifierCard from '../modules/Cards/GoogleKerasImageClassifierCard';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid'
+import { Link } from "react-router-dom"
 
+import { FaGithub } from "react-icons/fa"
 
-const ProjectsPage = () => (
-  <div>
-    
-    <Container maxWidth="md">
-    <h1>Projects</h1>
-    {/* <Grid className ={cardGrid}> */}
-    <Grid container spacing={4}>
-        <Grid item xs={12} sm={6} md={4}>
-          <PersonalPortfolioCard />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <NoYouDecideCard />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <KerasGaborCNNCard />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <GoogleKerasImageClassifierCard />
-        </Grid>
-    </Grid>
+import "./projects.css"
 
-    
-    </Container>
+import projectData from "../../images/projects/projectData"
+
+const ProjectsPage = () => {
   
-  </div>
-);
+  const [projects, setProjects] = React.useState(projectData)
+  console.log(projects);
+
+  return(
+    <>
+      <div className="projects-root-container">
+        {projects.map(project => {
+          return (
+            <div className="project-card">
+              <div className="project-image-container">
+                <img className="project-image" src={project.image} />
+              </div>
+              <div className="project-description-container">
+                <h2 className="project-title">{project.title}</h2>
+                <h5 className="project-description">{project.description}</h5>
+                <button className="project-button"><a href={project.github}><FaGithub /></a></button>
+              </div>
+            </div>
+          )
+        })}
+
+      </div>
+    </>
+  )
+
+}
 
 export default ProjectsPage;
 

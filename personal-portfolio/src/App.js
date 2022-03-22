@@ -6,7 +6,7 @@ import LandingPage from './components/Landing/landing';
 import AboutPage from './components/About/about';
 // import ContactPage from './components/views/contact';
 import BlogPage from './components/Blog/blog';
-// import ProjectsPage from './components/views/projects';
+import ProjectsPage from './components/Projects/projects';
 // import ResumePage from './components/views/resume';
 // import FAQPage from './components/views/FAQPage';
 // import NotFoundPage from './components/views/NotFoundPage';
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         {/* <Route path="/resume" element={<ResumePage />} /> */}
-        {/* <Route path="/projects" element={<ProjectsPage />} /> */}
+        <Route path="/projects" element={<ProjectsPage />} />
         {/* <Route path="/FAQ" element={<FAQPage />} /> */}
         {/* <Route path="/services" element={<ServicesPage />} /> */}
         {/* <Route element={<NotFoundPage />} /> */}

@@ -25,17 +25,7 @@ const postData = [
     ],
     "isShown": false,
   },
-  {
-    "id": "3",
-    "title": "main title 3",
-    "date": "some date 3",
-    "body": [
-      "some lorem ipsum body stuff", 
-      "separated by commas to indicate paragraph some lorem ipsum body stuff", 
-      "separated by commas to indicate paragraph"
-    ],
-    "isShown": false,
-  },
+
 ]
 
 export default postData;
