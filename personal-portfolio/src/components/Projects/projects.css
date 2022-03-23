@@ -13,6 +13,12 @@
   flex: 1 1 30%;
   /* border-radius: 5px; */
   border: none;
+  transition: transform .2s;
+  
+}
+
+.project-card:hover {
+  transform: scale(1.05)
 }
 
 .project-card:last-child {
