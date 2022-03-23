@@ -1,17 +1,68 @@
 import React from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
 
+
+import pdfFile from "../../documents/longpham_resume_2022.pdf"
 import "./resume.css"
 import profile from "../../images/about/profile/headshot.png"
-
-import { FaGithub, FaLinkedin, FaTools, FaExternalLinkAlt } from "react-icons/fa"
-import { MdEmail, MdLocationOn, MdCall, MdPeople, MdChat, MdThumbUp, MdMenuBook, MdOutlineDoneOutline } from "react-icons/md"
 import ProgressBar from '../modules/progressbar';
 
+import { FaGithub, FaLinkedin, FaTools, FaExternalLinkAlt } from "react-icons/fa"
+import { MdChevronLeft, MdChevronRight, MdEmail, MdLocationOn, MdCall, MdPeople, MdChat, MdThumbUp, MdMenuBook, MdOutlineDoneOutline } from "react-icons/md"
+
+
 const ResumePage = () => {
+  
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+  const [pdf, setPdf] = React.useState(pdfFile);
+  const [numPages, setNumPages] = React.useState(null);
+  const [pageNumber, setPageNumber] = React.useState(1);
+  const [showPage, setShowPage] = React.useState(false);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  }
+
+  const handleMinus = () => {
+    setPageNumber(prevPage => {
+      if(prevPage === 1) return 1;
+      else return --prevPage
+    })
+    // console.log(pageNumber)
+  }
+
+  const handlePlus = () => {
+    setPageNumber(prevPage => {
+      if(prevPage === numPages) return numPages;
+      else return ++prevPage
+    })
+    // console.log(pageNumber)
+  }
+
+  const handleShow = () => {
+    setShowPage(prevShow => !prevShow)
+  }
 
   return (
     <>
-      <button className="resume-root-container">Download PDF</button>
+      <div className="resume-root-container-buttons">
+        <button className="">Download PDF</button>
+        <button className="" onClick={handleShow}>{showPage ? "PDF" : "React Resume"}</button>
+      </div>
+
+      {showPage ?
+      <div className="resume-root-container resume-root-container-pdf">
+        <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <div className="resume-pdf-pagination-container">
+          <button className="resume-pdf-chevron" onClick={handleMinus}><MdChevronLeft /></button>
+          <p>Page {pageNumber} of {numPages}</p>
+          <button className="resume-pdf-chevron" onClick={handlePlus}><MdChevronRight /></button>
+        </div>
+      </div>
+      :
       <div className="resume-root-container">
         <div className="resume-left-container">
           <div className="resume-left-heading-container resume-title">
@@ -173,6 +224,7 @@ const ResumePage = () => {
           </div>
         </div>
       </div>
+      }
     </>
   );
 } 
