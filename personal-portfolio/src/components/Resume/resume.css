@@ -71,13 +71,22 @@
   color: green;
 }
 
+.resume-summary p {
+  /* text-align: justify; */
+}
+
 .resume-skills p {
   margin: 5px 0;
+}
+
+.resume-skills {
+  margin-bottom: 10px;
 }
 
 .resume-attributes-list {
   list-style: none;
   margin: 0;
+  /* margin-bottom: 3px; */
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +99,10 @@
   border-radius: 20px;
   margin: 2px 5px;
   padding: 1px 10px;
+  box-shadow: 0 0 3px black;
+  font-size: 14px;
 }
+
 .resume-attributes-item svg {
   vertical-align: middle;
   margin-bottom: 4px;
@@ -99,13 +111,19 @@
 .resume-section-body-even {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items:flex-start;
+  /* align-items:flex-start; */
+  /* vertical-align: center; */
+  /* vertical-align: middle; */
+
 }
 
 .resume-section-body-even *:first-child{
   flex: 1 1 10%;
   margin: 0;
+  margin-top: 3px;
+  
 }
 .resume-section-body-even *:nth-child(2n){
   flex: 1 1 60%;
@@ -114,11 +132,13 @@
 .resume-section-body-even *:nth-child(3n){
   flex: 1 1 20%;
   margin: 0;
+  margin-top: 3px;
 }
 
 .resume-section-title {
   margin: 0;
   background-color:rgba(0, 128, 0, 0.1);
+  font-weight: 400
 }
 
 .resume-section-body {
@@ -173,6 +193,11 @@
 .resume-section-body-simple *:nth-child(2n){
   flex: 1 1 100%;
   margin: 0;
+}
+
+.resume-section-body-simple a {
+  color: green;
+  text-decoration: none;;
 }
 
 @media (max-width: 981px) {

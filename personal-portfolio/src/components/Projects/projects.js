@@ -19,7 +19,7 @@ const ProjectsPage = () => {
           return (
             <div className="project-card">
               <div className="project-image-container">
-                <img className="project-image" src={project.image} />
+                <img className="project-image" src={project.image} alt={project.title}/>
               </div>
               <div className="project-description-container">
                 <h2 className="project-title">{project.title}</h2>
