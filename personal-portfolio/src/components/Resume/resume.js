@@ -3,9 +3,9 @@ import React from 'react';
 import "./resume.css"
 import profile from "../../images/about/profile/headshot.png"
 
-import { FaGithub, FaLinkedin, FaHtml5, FaCss3, FaReact, FaNode, FaPython } from "react-icons/fa"
-import { MdEmail, MdLocationOn, MdCall } from "react-icons/md"
-import { DiJavascript } from "react-icons/di"
+import { FaGithub, FaLinkedin, FaHtml5, FaCss3, FaReact, FaNode, FaPython, FaTools } from "react-icons/fa"
+import { MdEmail, MdLocationOn, MdCall, MdPeople, MdChat, MdThumbUp, MdMenuBook, MdOutlineDoneOutline } from "react-icons/md"
+import { IoChatbubbleEllipsesSharp } from "react-icons/io"
 import ProgressBar from '../modules/progressbar';
 
 const ResumePage = () => {
@@ -31,37 +31,39 @@ const ResumePage = () => {
         </div>
         <div className="resume-left-heading-container resume-skills">
           <h2 className="resume-section-title">Skills</h2>
-          <div>JavaScript</div>
-          <ProgressBar bgcolor="green" progress="80"  height={10} />
-          <div>HTML</div>
+          <p>JavaScript</p>
+          <ProgressBar bgcolor="green" progress="85"  height={10} />
+          <p>HTML</p>
           <ProgressBar bgcolor="green" progress="70"  height={10} />
-          <div>CSS</div>
+          <p>CSS</p>
           <ProgressBar bgcolor="green" progress="65"  height={10} />
-          <div>Python</div>
+          <p>Python</p>
           <ProgressBar bgcolor="green" progress="80"  height={10} />
-          <div>C++</div>
+          <p>C++</p>
           <ProgressBar bgcolor="green" progress="70"  height={10} />
-          <div>Java</div>
+          <p>Java</p>
           <ProgressBar bgcolor="green" progress="40"  height={10} />
-          <div>Image Processing</div>
+          <p>Image Processing</p>
           <ProgressBar bgcolor="green" progress="55"  height={10} />
-          <div>Deep Learning</div>
+          <p>Deep Learning</p>
           <ProgressBar bgcolor="green" progress="55"  height={10} />
         </div>
-        <div className="resume-left-heading-container resume-achievements">
-          <h2>Achievements</h2>
-          <p>Date</p>
-          <p>Name Of Achievement</p>
-        </div>
+        {/* <div className="resume-left-heading-container resume-achievements">
+          <div className="resume-section-body">
+            <h2>Achievements</h2>
+            <h4>NSERC Research Grant</h4>
+            <h4>2018</h4>
+          </div>
+        </div> */}
         <div className="resume-left-heading-container resume-attributes">
           <h2 className="resume-section-title">Attributes</h2>
-          <ul>
-            <li>Leader</li>
-            <li>Excellent Communicator</li>
-            <li>Problem Solver</li>
-            <li>Friendly</li>
-            <li>Fast Learner</li>
-            <li>Independent</li>
+          <ul className="resume-attributes-list">
+            <li className="resume-attributes-item"><MdPeople />Leader</li>
+            <li className="resume-attributes-item"><MdChat />Excellent Communicator</li>
+            <li className="resume-attributes-item"><FaTools />Problem Solver</li>
+            <li className="resume-attributes-item"><MdThumbUp />Friendly</li>
+            <li className="resume-attributes-item"><MdMenuBook />Fast Learner</li>
+            <li className="resume-attributes-item"><MdOutlineDoneOutline />Independent</li>
           </ul>
         </div>
       </div>

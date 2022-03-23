@@ -36,6 +36,7 @@
 .resume-profile-image {
   width: 100%;
   height: 200px;
+  max-width: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,6 +69,31 @@
 .resume-contact svg {
   font-size: 20px;
   color: green;
+}
+
+.resume-skills p {
+  margin: 5px 0;
+}
+
+.resume-attributes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.resume-attributes-item {
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  margin: 2px 5px;
+  padding: 1px 10px;
+}
+.resume-attributes-item svg {
+  vertical-align: middle;
+  margin-bottom: 4px;
 }
 
 .resume-section-body-even {
@@ -151,8 +177,8 @@
 
 @media (max-width: 981px) {
   .resume-profile-image {
+    width: 200px;;
     height: 200px;
-    width: 200px;
     
   }
 }
