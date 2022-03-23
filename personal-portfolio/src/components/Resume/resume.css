@@ -4,6 +4,8 @@
   margin: 5% 10%;
   gap: 2%;
   padding: 2%;
+  /* justify-content: center;
+  align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -147,7 +149,7 @@
   margin: 0;
 }
 
-@media (max-width: 691px) {
+@media (max-width: 981px) {
   .resume-profile-image {
     height: 200px;
     width: 200px;
