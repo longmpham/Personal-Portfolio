@@ -6,6 +6,7 @@ import profile from "../../images/about/profile/headshot.png"
 import { FaGithub, FaLinkedin, FaHtml5, FaCss3, FaReact, FaNode, FaPython } from "react-icons/fa"
 import { MdEmail, MdLocationOn, MdCall } from "react-icons/md"
 import { DiJavascript } from "react-icons/di"
+import ProgressBar from '../modules/progressbar';
 
 const ResumePage = () => {
 
@@ -31,14 +32,21 @@ const ResumePage = () => {
         <div className="resume-left-heading-container resume-skills">
           <h2 className="resume-section-title">Skills</h2>
           <div>JavaScript</div>
+          <ProgressBar bgcolor="green" progress="80"  height={10} />
           <div>HTML</div>
+          <ProgressBar bgcolor="green" progress="70"  height={10} />
           <div>CSS</div>
-          <div>C</div>
+          <ProgressBar bgcolor="green" progress="65"  height={10} />
+          <div>Python</div>
+          <ProgressBar bgcolor="green" progress="80"  height={10} />
           <div>C++</div>
+          <ProgressBar bgcolor="green" progress="70"  height={10} />
           <div>Java</div>
-          <div>Web Development</div>
+          <ProgressBar bgcolor="green" progress="40"  height={10} />
           <div>Image Processing</div>
+          <ProgressBar bgcolor="green" progress="55"  height={10} />
           <div>Deep Learning</div>
+          <ProgressBar bgcolor="green" progress="55"  height={10} />
         </div>
         <div className="resume-left-heading-container resume-achievements">
           <h2>Achievements</h2>
