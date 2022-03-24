@@ -50,10 +50,10 @@ const Socials = ({bgcolor, fontcolor, fontsize}) => {
     // transition: "div 1s"
   }
 
-  const PopUp = 
-      <div style={popup}>
-        <p>Noobinator#1618</p>
-      </div>
+  // const PopUp = 
+  //     <div style={popup}>
+  //       <p>Noobinator#1618</p>
+  //     </div>
   
   // console.log(isHover)
 
