@@ -1,7 +1,7 @@
 .resume-root-container {
   display: flex;
   box-shadow: 0 0 20px black;
-  margin: 5% 10%;
+  margin: 5% 20%;
   gap: 2%;
   padding: 2%;
   /* justify-content: center;
@@ -262,4 +262,11 @@
     width: 200px;;
     height: 200px;
   }
+  .resume-root-container {
+    margin: 5%;
+    transition: margin 200ms;
+  }
+}
+
+@media (max-width: 375px) {
 }

@@ -14,7 +14,7 @@
   /* border-radius: 5px; */
   border: none;
   transition: transform .2s;
-  
+  max-width: 350px;
 }
 
 .project-card:hover {
