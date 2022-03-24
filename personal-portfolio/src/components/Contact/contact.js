@@ -1,135 +1,26 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import Avatar from '@material-ui/core/Avatar';
+import React from 'react'
+import Socials from '../modules/socials'
 
-import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import Hidden from '@material-ui/core/Hidden';
+import "./contact.css"
 
-
-import MailIcon from '@material-ui/icons/Mail';
-
-import SocialMediaPaper from '../modules/SocialMediaPaper'
-
-import Background from '../../images/contact/nalgene.jpg'
-
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(4,0,0,0),
-    height: "100vh",
-    // width: "100%"
-  },
-  image: {
-    // backgroundImage: 'url(https://source.unsplash.com/random)',
-    backgroundImage: `url(${Background})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: "500px"
-  },
-  paper: {
-    margin: theme.spacing(8, 4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-  temp: {
-    backgroundColor: "grey",
-  },
-}));
-
-
-function ContactPage() {
-  const classes = useStyles();
-
+const ContactPage = () => {
   return (
-  <div className={classes.root}>
-    <Container maxWidth="lg">
-      <Grid container spacing={4}>
-          <Hidden xsDown>
-            <Grid item xs={false} sm={5} md={7} className={classes.image}>
-              {/* can add text here if you want. */}
-            </Grid>
-          </Hidden>
+    <div className="contact-root-container">
+      <div className="contact-left-container">
+        picture placeholder
+      </div>
+      <div className="contact-right-container">
+        <div className="contact-title-container">
+          <h2>Thanks for visiting!</h2>
+          <h5>If you liked my stuff and want to get in contact, please email me!</h5>
+          <input placeholder="johnsmith@gmail.com"></input>
+          <textarea placeholder="Hi, your website looks amazing. Please contact me at 555-555-5555 and let's set up an interview"></textarea>
+          <Socials bgcolor="transparent" fontcolor="green" fontsize="40px" />
+        </div>
+      </div>
 
-          <Grid item xs={12} sm={7} md={5} component={Paper} elevation={4} square>
-            <div className={classes.paper}>
-              <Avatar className={classes.avatar}>
-                <MailIcon />
-              </Avatar>
-              <Typography component="h1" variant="h5">
-                longmpham93@gmail.com
-              </Typography>
-              {/* <form className={classes.form} Validate>
-                <TextField
-                  variant="outlined"
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="name"
-                  label="Name"
-                  name="name"
-                  autoComplete="name"
-                  autoFocus
-                />
-                <TextField
-                  variant="outlined"
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                  autoFocus
-                />
-                <TextField
-                  variant="outlined"
-                  margin="normal"
-                  multiline
-                  rows="5"
-                  required
-                  fullWidth
-                  name="message"
-                  label="Message"
-                  type="message"
-                  id="message"
-                  // autoComplete="message"
-                />
-                <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  color="primary"
-                  className={classes.submit}
-                >
-                  Send
-                </Button>
-              </form> */}
-              <SocialMediaPaper />
-            </div>
-          </Grid>
-          
-      </Grid>
-    </Container>
-  </div>
-  );
+    </div>
+  )
 }
 
-export default ContactPage;
+export default ContactPage

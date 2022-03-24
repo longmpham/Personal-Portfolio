@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom
 
 import LandingPage from './components/Landing/landing';
 import AboutPage from './components/About/about';
-// import ContactPage from './components/views/contact';
+import ContactPage from './components/Contact/contact';
 import BlogPage from './components/Blog/blog';
 import ProjectsPage from './components/Projects/projects';
 import ResumePage from './components/Resume/resume';
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         {/* <Route path="/FAQ" element={<FAQPage />} /> */}

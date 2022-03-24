@@ -47,7 +47,7 @@ const ResumePage = () => {
   return (
     <>
       <div className="resume-root-container-buttons">
-        {/* <button className="">Download PDF</button> */}
+        <button className=""><a href={pdf} download>download pdf</a></button>
         <button className="" onClick={handleShow}>{showPage ? "PDF" : "React Resume"}</button>
       </div>
 

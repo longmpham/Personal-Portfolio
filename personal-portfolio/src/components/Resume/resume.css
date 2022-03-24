@@ -85,8 +85,7 @@
 
 .resume-attributes-list {
   list-style: none;
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0;
   /* margin-bottom: 3px; */
   padding: 0;
   display: flex;
@@ -205,7 +204,7 @@
 .resume-root-container-pdf {
   display: flex;
   flex-direction: column;
-  margin: 5% 20%;
+  margin: 5% 10%;
 }
 
 .resume-pdf-pagination-container {
@@ -213,6 +212,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 90% !important;
+  /* height: 100% !important; */
 }
 
 .resume-pdf-pagination-container button {
@@ -233,16 +238,28 @@
 }
 
 .resume-root-container-buttons button {
-  padding: 10px;
+  /* padding: 10px; */
   color: white;
   background-color: green;
-  cursor: pointer;
+  /* cursor: pointer; */
+  display: inline-block;
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-root-container-buttons button a {
+  padding: 0 10px;
+  height: 100%;
+  width: 100%;
+  /* background-color: white; */
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 981px) {
   .resume-profile-image {
     width: 200px;;
     height: 200px;
-    
   }
 }
