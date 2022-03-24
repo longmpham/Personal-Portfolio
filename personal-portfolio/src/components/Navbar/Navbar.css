@@ -44,6 +44,10 @@
   height: 100%;
 }
 
+.navbar-menu-button:last-child {
+  /* margin-right: 1px; */
+}
+
 .navbar-menu-button a:hover {
   background-color: rgba(0, 98, 0, 0.8);
   border-radius: 5px;

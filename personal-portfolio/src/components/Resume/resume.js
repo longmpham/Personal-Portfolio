@@ -47,7 +47,7 @@ const ResumePage = () => {
   return (
     <>
       <div className="resume-root-container-buttons">
-        <button className="">Download PDF</button>
+        {/* <button className="">Download PDF</button> */}
         <button className="" onClick={handleShow}>{showPage ? "PDF" : "React Resume"}</button>
       </div>
 
@@ -78,7 +78,7 @@ const ResumePage = () => {
             <h4><a href="https://www.linkedin.com/in/longmpham/"><FaLinkedin />LinkedIn</a></h4>
           </div>
           <div className="resume-left-heading-container resume-summary">
-            <h2 className="resume-section-title">Brief Summary</h2>
+            <h2 className="resume-section-title">Long Story Short...</h2>
             <p>I am a software engineer currently working at OSI Maritime Systems which provides the world's leading WECDIS displays for Navies across the globe. I have the pleasure of testing their systems and making sure that their ships sail bug free. In my free time, I love to play with my dog, go on backpacking trips, love to learn new technology and love playing video games.</p>
           </div>
           <div className="resume-left-heading-container resume-skills">

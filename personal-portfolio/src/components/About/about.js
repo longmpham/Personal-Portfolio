@@ -40,7 +40,7 @@ const AboutPage = () => {
             <p>Here's my story. I graduated with a Master's degree for Software Engineering at the University of Western Ontario (aka Western University). I then started my career working at OSI Maritime Systems and as a side gig, I just learn about random things. I love to hike and I'm also a self-proclaimed "good" gamer. Also, I really love dogs.</p>
           </div>
           <div className="about-right-container">
-            <img src={profilePicture} />
+            <img className="about-profile-img" src={profilePicture} />
           </div>
         </div>
         <div className="about-card-container">
