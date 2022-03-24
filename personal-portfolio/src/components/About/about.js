@@ -85,7 +85,7 @@ const AboutPage = () => {
             <h1>Coding</h1>
             <p>I've dipped my toes into many fields and to be perfectly honest, I don't really have a favourite. They all just do cool stuff. Deep learning, machine learning, sensors and data, frontend, backend, you name it, I've tried it, otherwise, I'll be honest and say I've never used it. That's one thing I learned in my Master's... it's OK to say "I don't know" sometimes!</p>
             <button className="about-body-button"><Link to="/projects">Projects</Link></button>
-            <button className="about-body-button"><Link to="/projects">Resume/CV</Link></button>
+            <button className="about-body-button"><Link to="/resume">Resume/CV</Link></button>
           </div>
           <div className="about-right-container">
             <div className="code-icons">
