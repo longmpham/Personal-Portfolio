@@ -174,6 +174,10 @@ const ResumePage = () => {
               <p>Using the ReactJS library to build a frontend single page application that shows my personal achievements, past history, interests, and my resume.</p>
             </div>
             <div className="resume-section-body-simple">
+              <h4 className="resume-section-header">Profile Viewer <a href="https://github.com/longmpham/profileviewer"><FaExternalLinkAlt /></a></h4>
+              <p>Created a MERN app for basic user authentication using JWT and Bcrypt for password encryption. This app also provides a basic frontend that shows a user login page along with a profile page that shows their stats.</p>
+            </div>
+            <div className="resume-section-body-simple">
               <h4 className="resume-section-header">Meme Generator Using React Hooks <a href="https://github.com/longmpham/memegenerator"><FaExternalLinkAlt /></a></h4>
               <p>Using React with hooks, fetch, async/await to grab images from the public API from ImgFlip</p>
             </div>
