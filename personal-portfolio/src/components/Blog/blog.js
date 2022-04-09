@@ -41,8 +41,8 @@ const BlogPage = () => {
               <div className="blog-post" key={post.id}>
                 <h1 className="blog-title">{post.title}</h1>
                 <h6 className="blog-date">{post.date}</h6>
-                <button name={post.id} className="blog-show-button" onClick={()=> {handleClick(post.id)}} value={post.isShown}>{post.isShown ? <FaEyeSlash /> : <FaEye /> }</button>
-                {!post.isShown && post.body.map((paragraph, index) => {
+                <button name={post.id} className="blog-show-button" onClick={()=> {handleClick(post.id)}} value={post.isShown}>{post.isShown ? <FaEye /> : <FaEyeSlash /> }</button>
+                {post.isShown && post.body.map((paragraph, index) => {
                   return (
                       <p key={index} className="blog-body">{paragraph}</p>
                   )
