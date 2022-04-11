@@ -5,27 +5,43 @@ import { FaGithub } from "react-icons/fa"
 
 import "./projects.css"
 
-import projectData from "../../images/projects/projectData"
+import projectData from "./projectData"
 
 const ProjectsPage = () => {
   
   const [projects, setProjects] = React.useState(projectData)
-  console.log(projects);
+  // console.log(projects);
+
+  // React.useEffect( () => {
+  //   const fetchProjects = async () => {
+  //     const options = {
+  //       headers : { 
+  //         'Content-Type': 'application/json',
+  //         'Accept': 'application/json'
+  //        }
+  //     }
+  //     const projects = await fetch(projectData, options)
+  //     console.log(projects.body)
+  //     setProjects(projects)
+
+  //   }
+  //   fetchProjects();
+  // },[])
 
   return(
     <>
       <div className="projects-root-container">
         {projects.map(project => {
           return (
-            <div className="project-card">
+            <div key={project.id} className="project-card">
               <div className="project-image-container">
                 <img className="project-image" src={project.image} alt={project.title}/>
               </div>
               <div className="project-description-container">
                 <h2 className="project-title">{project.title}</h2>
-                <h5 className="project-description">{project.description}</h5>
-                <button className="project-button"><a href={project.github}><FaGithub /></a></button>
+                <h4 className="project-description">{project.description}</h4>
               </div>
+              <button className="project-button"><a href={project.github}><FaGithub /></a></button>
             </div>
           )
         })}
