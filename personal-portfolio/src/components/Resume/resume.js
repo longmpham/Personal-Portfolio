@@ -58,26 +58,14 @@ const ResumePage = () => {
 
       {showPage ?
       <>
-      <p>Note: PDF version is not rendering properly...</p>
-      <ResumePDF pdf={pdf} numPages={numPages} pageNumber={pageNumber} onDocumentLoadSuccess={onDocumentLoadSuccess} handlePlus={handlePlus} handleMinus={handleMinus}/>
+        <p>Note: PDF version is not rendering properly...</p>
+        <ResumePDF pdf={pdf} numPages={numPages} pageNumber={pageNumber} onDocumentLoadSuccess={onDocumentLoadSuccess} handlePlus={handlePlus} handleMinus={handleMinus}/>
       </>
-
-
-      // <div className="resume-root-container resume-root-container-pdf">
-      //   <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-      //     <Page pageNumber={pageNumber} />
-      //   </Document>
-      //   <div className="resume-pdf-pagination-container">
-      //     <button className="resume-pdf-chevron" onClick={handleMinus}><MdChevronLeft /></button>
-      //     <p>Page {pageNumber} of {numPages}</p>
-      //     <button className="resume-pdf-chevron" onClick={handlePlus}><MdChevronRight /></button>
-      //   </div>
-      // </div>
       :
       <div className="resume-root-container">
         <div className="resume-left-container">
           <div className="resume-left-heading-container resume-title">
-            <img className="resume-profile-image" src={profile} alt="profile picture"/>
+            <img className="resume-profile-image" src={profile} alt="profile"/>
             <h1>Long Pham</h1>
             <h2>Software Engineer - Systems Test Engineer (L2)</h2>
           </div>
