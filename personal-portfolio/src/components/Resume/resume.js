@@ -1,14 +1,12 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-
-
 import pdfFile from "../../documents/longpham_resume_2022.pdf"
 import "./resume.css"
 import profile from "../../images/about/profile/headshot.png"
 import ProgressBar from '../modules/progressbar';
 import skillsData from './skillsData';
 import jobsData from './jobsData';
-import projectsData from './projectsData';
+import projectsData from '../Projects/projectsData';
 import leadershipData from './leadershipData';
 import educationData from './educationData';
 import ResumePDF from './resumePDF';
@@ -55,10 +53,14 @@ const ResumePage = () => {
       <div className="resume-root-container-buttons">
         <button className=""><a href={pdf} download>Download PDF</a></button>
         <button className="" onClick={handleShow}>{showPage ? "PDF" : "React Resume"}</button>
+        
       </div>
 
       {showPage ?
+      <>
+      <p>Note: PDF version is not rendering properly...</p>
       <ResumePDF pdf={pdf} numPages={numPages} pageNumber={pageNumber} onDocumentLoadSuccess={onDocumentLoadSuccess} handlePlus={handlePlus} handleMinus={handleMinus}/>
+      </>
 
 
       // <div className="resume-root-container resume-root-container-pdf">

@@ -5,11 +5,11 @@ import { FaGithub } from "react-icons/fa"
 
 import "./projects.css"
 
-import projectData from "./projectData"
+import projectsData from "./projectsData"
 
 const ProjectsPage = () => {
   
-  const [projects, setProjects] = React.useState(projectData)
+  const [projects, setProjects] = React.useState(projectsData)
   // console.log(projects);
 
   // React.useEffect( () => {
@@ -53,6 +53,3 @@ const ProjectsPage = () => {
 }
 
 export default ProjectsPage;
-
-
-
