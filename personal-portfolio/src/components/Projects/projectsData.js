@@ -60,7 +60,7 @@ const projectsData = [
     title: "Algorthims and DS Practice",
     image: require("../../images/projects/algods.jpg"),
     description:
-      "Just a repo full of practice problems and sample interview questions...",
+      "Just a repo full of practice problems and sample interview questions",
     link: "https://github.com/longmpham/algorithms_for_practice",
   },
   {

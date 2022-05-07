@@ -41,7 +41,7 @@ const ProjectsPage = () => {
                 <h2 className="project-title">{project.title}</h2>
                 <h4 className="project-description">{project.description}</h4>
               </div>
-              <button className="project-button"><a href={project.github}><FaGithub /></a></button>
+              <button className="project-button"><a href={project.link}><FaGithub /></a></button>
             </div>
           )
         })}
