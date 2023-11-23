@@ -5,9 +5,11 @@ How to Launch on Firebase...
 - in terminal on ./personal-portfolio (vscode), type:
 ```Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass```
 
-2. In the project folder, you'll need to create an optimized Build folder by running: 
+2. In the project folder, you'll need to update and create an optimized Build folder by running: 
+```firebase logout```
+```firebase login```
+```npm install -g firebase-tools```
 ```npm run build```
-
 3. Run firebase now! You'll likely have to initialize it first.
 ```firebase init```
 
@@ -22,5 +24,6 @@ How to Launch on Firebase...
 ```? File build/index.html already exists. Overwrite? No```
 ```i  Skipping write of build/index.html```
 
-4. Go to your website!
+4. Deploy and go to your website!
+```firebase deploy```
 ```Deploy complete!```
