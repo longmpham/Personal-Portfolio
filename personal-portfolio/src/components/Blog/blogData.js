@@ -1,4 +1,17 @@
 const postData = [
+  // {
+  //   "id": "1",
+  //   "title": "Title",
+  //   "date": "Date in text: Jan 18, 2022",
+  //   "body": [
+  //     "Each line represents a paragraph.", 
+  //     "Each line represents a paragraph.", 
+  //     "Each line represents a paragraph.", 
+  //     "Each line represents a paragraph.", 
+  //     "Each line represents a paragraph.", 
+  //   ],
+  //   "isShown": false,
+  // },
   {
     "id": "1",
     "title": "Back to Scho...Coding!",
@@ -38,6 +51,22 @@ const postData = [
     ],
     "isShown": true,
   },
+  {
+    "id": "4",
+    "title": "So... It's Been Awhile",
+    "date": "November 22, 2023",
+    "body": [
+      "Hey there, amazing readers! It's been a hot minute since I last dropped a line here, and a lot has happened in the meantime.",
+      "First off, let me tell you about the grind – the hustle has been real. I've been putting in some serious hours, burning the midnight oil to level up my skills. Python has become my new best friend, and together, we've been on quite the journey. From the basics to diving deep into advanced concepts, it's been both challenging and insanely rewarding.",
+      "Now, let's talk about a passion project that's been cooking up in my tech kitchen – the home media server. Picture this: a cozy setup, dim lights, and a seamless streaming experience. Yeah, that's the dream, and I've been turning it into reality. Learning the ins and outs of server setups, optimizing for performance, and ensuring a smooth streaming flow – it's been an adventure, to say the least.",
+      "There's something incredibly satisfying about building your own little corner of the internet at home. From organizing my movie collection to setting up playlists for every mood, it's the small victories that make it all worthwhile.",
+      "As I navigate through cables and code, I can't help but appreciate the learning process. Every bug fixed, every script optimized – it's a step closer to the ideal home media haven. And let's be real, the learning never stops. Whether it's tweaking configurations or exploring new technologies, there's always more to discover.",
+      "So, here's to late-night coding sessions, to conquering the challenges, and to building something that brings joy – both to me and anyone who stumbles upon my little corner of the digital universe.",
+      "Until next time, happy coding and stay curious!"
+    ],
+    "isShown": true
+  }
+  
 
 ]
 

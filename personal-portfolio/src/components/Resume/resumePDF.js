@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdfFile from "../../documents/longpham_resume_2023.pdf"
+// import pdfFile from "../../documents/longpham_resume_2023.pdf"
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
 
