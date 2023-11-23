@@ -45,6 +45,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  aspect-ratio: 16-9;
   /* border-bottom: 1px solid black; */
   /* border-bottom-left-radius: 5px; */
   /* border-bottom-right-radius: 5px; */

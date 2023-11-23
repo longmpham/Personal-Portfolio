@@ -1,6 +1,6 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdfFile from "../../documents/longpham_resume_2022.pdf"
+import pdfFile from "../../documents/longpham_resume_2023.pdf"
 import "./resume.css"
 import profile from "../../images/about/profile/headshot.png"
 import ProgressBar from '../modules/progressbar';

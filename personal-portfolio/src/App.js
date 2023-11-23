@@ -12,6 +12,7 @@ import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 // import ServicesPage from './components/views/ServicesPage';
 
 import NavBar from './components/Navbar/Navbar'
+import Privacy from './components/Privacy/privacy';
 
 // import './App.css';
 
@@ -30,6 +31,7 @@ const App = () => {
         {/* <Route path="/FAQ" element={<FAQPage />} /> */}
         {/* <Route path="/services" element={<ServicesPage />} /> */}
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/tos" element={<Privacy />} />
       </Routes>
     </Router>
   )
